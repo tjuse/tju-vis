@@ -32,8 +32,8 @@ jobs:
 
       - name: Build
         run: npm run build
-        env:
-          GITHUB_ACTIONS: true
+        # BASE_PATH is intentionally unset: custom domain vis.tjuse.com serves from /
+        # If the custom domain is ever removed, set BASE_PATH=/tju-vis/ here
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

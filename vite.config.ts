@@ -4,9 +4,10 @@ import tailwindcss from '@tailwindcss/vite'
 import { viteStaticCopy } from 'vite-plugin-static-copy'
 import path from 'node:path'
 
-// Use /tju-vis/ base when deploying to GitHub Pages (CI sets GITHUB_ACTIONS=true)
-// In local dev, use / so that root-relative image paths resolve correctly
-const base = process.env.GITHUB_ACTIONS ? '/tju-vis/' : '/'
+// BASE_PATH env var lets CI override the base (default: /).
+// With a custom domain (vis.tjuse.com) no prefix is needed.
+// Set BASE_PATH=/tju-vis/ only if deploying without a custom domain.
+const base = process.env.BASE_PATH ?? '/'
 
 export default defineConfig({
   base,
