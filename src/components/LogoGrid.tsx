@@ -26,7 +26,7 @@ export function LogoGrid({ logos, onSelect }: Props) {
   return (
     <motion.div
       layout
-      className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 py-6"
+      className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4 py-6"
     >
       <AnimatePresence mode="popLayout">
         {logos.map((logo, i) => (
