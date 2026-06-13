@@ -1,0 +1,1491 @@
+{
+  "generated": "2026-06-13T17:02:00.963Z",
+  "stats": {
+    "total": 48,
+    "withFill": 48,
+    "withPadding": 40
+  },
+  "filterOptions": {
+    "categories": [
+      "图形标志",
+      "字体标志",
+      "标准组合",
+      "辅助图形"
+    ],
+    "colors": [
+      "北洋蓝/白",
+      "北洋蓝/透明",
+      "白/北洋蓝",
+      "黑/白"
+    ],
+    "langs": [
+      "中文",
+      "英文"
+    ],
+    "orientations": [
+      "横向",
+      "横文纵排",
+      "纵向",
+      "纵文纵排"
+    ]
+  },
+  "logos": [
+    {
+      "id": "logo-0-tju_badge_blue",
+      "base": "tju_badge_blue",
+      "name": "图形标志",
+      "category": "图形标志",
+      "color": "白/北洋蓝",
+      "lang": "",
+      "orientation": "",
+      "cardBg": "white",
+      "preview": "images/fill/svg/tju_badge_blue.svg",
+      "layouts": {
+        "fill": {
+          "png": "images/fill/png/tju_badge_blue.png",
+          "svg": "images/fill/svg/tju_badge_blue.svg",
+          "pdf": "images/fill/pdf/tju_badge_blue.pdf"
+        },
+        "padding": {
+          "png": "images/padding/png/tju_badge_blue_padding.png",
+          "svg": "images/padding/svg/tju_badge_blue_padding.svg",
+          "pdf": "images/padding/pdf/tju_badge_blue_padding.pdf"
+        }
+      },
+      "tags": [
+        "图形标志",
+        "白/北洋蓝",
+        "填充",
+        "独立区域"
+      ]
+    },
+    {
+      "id": "logo-1-tju_badge_tp",
+      "base": "tju_badge_tp",
+      "name": "图形标志",
+      "category": "图形标志",
+      "color": "北洋蓝/透明",
+      "lang": "",
+      "orientation": "",
+      "cardBg": "checker",
+      "preview": "images/fill/svg/tju_badge_tp.svg",
+      "layouts": {
+        "fill": {
+          "png": "images/fill/png/tju_badge_tp.png",
+          "svg": "images/fill/svg/tju_badge_tp.svg",
+          "pdf": "images/fill/pdf/tju_badge_tp.pdf"
+        },
+        "padding": {
+          "png": "images/padding/png/tju_badge_tp_padding.png",
+          "svg": "images/padding/svg/tju_badge_tp_padding.svg",
+          "pdf": "images/padding/pdf/tju_badge_tp_padding.pdf"
+        }
+      },
+      "tags": [
+        "图形标志",
+        "北洋蓝/透明",
+        "填充",
+        "独立区域"
+      ]
+    },
+    {
+      "id": "logo-2-tju_badge_white",
+      "base": "tju_badge_white",
+      "name": "图形标志",
+      "category": "图形标志",
+      "color": "北洋蓝/白",
+      "lang": "",
+      "orientation": "",
+      "cardBg": "blue",
+      "preview": "images/fill/svg/tju_badge_white.svg",
+      "layouts": {
+        "fill": {
+          "png": "images/fill/png/tju_badge_white.png",
+          "svg": "images/fill/svg/tju_badge_white.svg",
+          "pdf": "images/fill/pdf/tju_badge_white.pdf"
+        },
+        "padding": {
+          "png": "images/padding/png/tju_badge_white_padding.png",
+          "svg": "images/padding/svg/tju_badge_white_padding.svg",
+          "pdf": "images/padding/pdf/tju_badge_white_padding.pdf"
+        }
+      },
+      "tags": [
+        "图形标志",
+        "北洋蓝/白",
+        "填充",
+        "独立区域"
+      ]
+    },
+    {
+      "id": "logo-3-tju_blue",
+      "base": "tju_blue",
+      "name": "校徽校标",
+      "category": "标准组合",
+      "color": "白/北洋蓝",
+      "lang": "",
+      "orientation": "横向",
+      "cardBg": "white",
+      "preview": "images/fill/svg/tju_blue.svg",
+      "layouts": {
+        "fill": {
+          "png": "images/fill/png/tju_blue.png",
+          "svg": "images/fill/svg/tju_blue.svg",
+          "pdf": "images/fill/pdf/tju_blue.pdf"
+        },
+        "padding": {
+          "png": "images/padding/png/tju_blue_padding.png",
+          "svg": "images/padding/svg/tju_blue_padding.svg",
+          "pdf": "images/padding/pdf/tju_blue_padding.pdf"
+        }
+      },
+      "tags": [
+        "标准组合",
+        "白/北洋蓝",
+        "横向",
+        "填充",
+        "独立区域"
+      ]
+    },
+    {
+      "id": "logo-4-tju_blue_cn",
+      "base": "tju_blue_cn",
+      "name": "校徽校标（中文）",
+      "category": "标准组合",
+      "color": "白/北洋蓝",
+      "lang": "中文",
+      "orientation": "横向",
+      "cardBg": "white",
+      "preview": "images/fill/svg/tju_blue_cn.svg",
+      "layouts": {
+        "fill": {
+          "png": "images/fill/png/tju_blue_cn.png",
+          "svg": "images/fill/svg/tju_blue_cn.svg",
+          "pdf": "images/fill/pdf/tju_blue_cn.pdf"
+        },
+        "padding": {
+          "png": "images/padding/png/tju_blue_cn_padding.png",
+          "svg": "images/padding/svg/tju_blue_cn_padding.svg",
+          "pdf": "images/padding/pdf/tju_blue_cn_padding.pdf"
+        }
+      },
+      "tags": [
+        "标准组合",
+        "白/北洋蓝",
+        "中文",
+        "横向",
+        "填充",
+        "独立区域"
+      ]
+    },
+    {
+      "id": "logo-5-tju_blue_cn_vert",
+      "base": "tju_blue_cn_vert",
+      "name": "校徽校标（中文，纵向）",
+      "category": "标准组合",
+      "color": "白/北洋蓝",
+      "lang": "中文",
+      "orientation": "纵向",
+      "cardBg": "white",
+      "preview": "images/fill/svg/tju_blue_cn_vert.svg",
+      "layouts": {
+        "fill": {
+          "png": "images/fill/png/tju_blue_cn_vert.png",
+          "svg": "images/fill/svg/tju_blue_cn_vert.svg",
+          "pdf": "images/fill/pdf/tju_blue_cn_vert.pdf"
+        },
+        "padding": {
+          "png": "images/padding/png/tju_blue_cn_vert_padding.png",
+          "svg": "images/padding/svg/tju_blue_cn_vert_padding.svg",
+          "pdf": "images/padding/pdf/tju_blue_cn_vert_padding.pdf"
+        }
+      },
+      "tags": [
+        "标准组合",
+        "白/北洋蓝",
+        "中文",
+        "纵向",
+        "填充",
+        "独立区域"
+      ]
+    },
+    {
+      "id": "logo-6-tju_blue_en",
+      "base": "tju_blue_en",
+      "name": "校徽校标（英文）",
+      "category": "标准组合",
+      "color": "白/北洋蓝",
+      "lang": "英文",
+      "orientation": "横向",
+      "cardBg": "white",
+      "preview": "images/fill/svg/tju_blue_en.svg",
+      "layouts": {
+        "fill": {
+          "png": "images/fill/png/tju_blue_en.png",
+          "svg": "images/fill/svg/tju_blue_en.svg",
+          "pdf": "images/fill/pdf/tju_blue_en.pdf"
+        },
+        "padding": {
+          "png": "images/padding/png/tju_blue_en_padding.png",
+          "svg": "images/padding/svg/tju_blue_en_padding.svg",
+          "pdf": "images/padding/pdf/tju_blue_en_padding.pdf"
+        }
+      },
+      "tags": [
+        "标准组合",
+        "白/北洋蓝",
+        "英文",
+        "横向",
+        "填充",
+        "独立区域"
+      ]
+    },
+    {
+      "id": "logo-7-tju_blue_en_vert",
+      "base": "tju_blue_en_vert",
+      "name": "校徽校标（英文，纵向）",
+      "category": "标准组合",
+      "color": "白/北洋蓝",
+      "lang": "英文",
+      "orientation": "纵向",
+      "cardBg": "white",
+      "preview": "images/fill/svg/tju_blue_en_vert.svg",
+      "layouts": {
+        "fill": {
+          "png": "images/fill/png/tju_blue_en_vert.png",
+          "svg": "images/fill/svg/tju_blue_en_vert.svg",
+          "pdf": "images/fill/pdf/tju_blue_en_vert.pdf"
+        },
+        "padding": {
+          "png": "images/padding/png/tju_blue_en_vert_padding.png",
+          "svg": "images/padding/svg/tju_blue_en_vert_padding.svg",
+          "pdf": "images/padding/pdf/tju_blue_en_vert_padding.pdf"
+        }
+      },
+      "tags": [
+        "标准组合",
+        "白/北洋蓝",
+        "英文",
+        "纵向",
+        "填充",
+        "独立区域"
+      ]
+    },
+    {
+      "id": "logo-8-tju_blue_vert_ht",
+      "base": "tju_blue_vert_ht",
+      "name": "校徽校标（横文纵排）",
+      "category": "标准组合",
+      "color": "白/北洋蓝",
+      "lang": "",
+      "orientation": "横文纵排",
+      "cardBg": "white",
+      "preview": "images/fill/svg/tju_blue_vert_ht.svg",
+      "layouts": {
+        "fill": {
+          "png": "images/fill/png/tju_blue_vert_ht.png",
+          "svg": "images/fill/svg/tju_blue_vert_ht.svg",
+          "pdf": "images/fill/pdf/tju_blue_vert_ht.pdf"
+        },
+        "padding": {
+          "png": "images/padding/png/tju_blue_vert_ht_padding.png",
+          "svg": "images/padding/svg/tju_blue_vert_ht_padding.svg",
+          "pdf": "images/padding/pdf/tju_blue_vert_ht_padding.pdf"
+        }
+      },
+      "tags": [
+        "标准组合",
+        "白/北洋蓝",
+        "横文纵排",
+        "填充",
+        "独立区域"
+      ]
+    },
+    {
+      "id": "logo-9-tju_blue_vert_vt",
+      "base": "tju_blue_vert_vt",
+      "name": "校徽校标（纵文纵排）",
+      "category": "标准组合",
+      "color": "白/北洋蓝",
+      "lang": "",
+      "orientation": "纵文纵排",
+      "cardBg": "white",
+      "preview": "images/fill/svg/tju_blue_vert_vt.svg",
+      "layouts": {
+        "fill": {
+          "png": "images/fill/png/tju_blue_vert_vt.png",
+          "svg": "images/fill/svg/tju_blue_vert_vt.svg",
+          "pdf": "images/fill/pdf/tju_blue_vert_vt.pdf"
+        },
+        "padding": {
+          "png": "images/padding/png/tju_blue_vert_vt_padding.png",
+          "svg": "images/padding/svg/tju_blue_vert_vt_padding.svg",
+          "pdf": "images/padding/pdf/tju_blue_vert_vt_padding.pdf"
+        }
+      },
+      "tags": [
+        "标准组合",
+        "白/北洋蓝",
+        "纵文纵排",
+        "填充",
+        "独立区域"
+      ]
+    },
+    {
+      "id": "logo-10-tju_shield_border",
+      "base": "tju_shield_border",
+      "name": "北洋盾（边框）",
+      "category": "辅助图形",
+      "color": "北洋蓝/白",
+      "lang": "",
+      "orientation": "",
+      "cardBg": "blue",
+      "preview": "images/fill/svg/tju_shield_border.svg",
+      "layouts": {
+        "fill": {
+          "png": "images/fill/png/tju_shield_border.png",
+          "svg": "images/fill/svg/tju_shield_border.svg",
+          "pdf": "images/fill/pdf/tju_shield_border.pdf"
+        }
+      },
+      "tags": [
+        "辅助图形",
+        "北洋蓝/白",
+        "填充"
+      ]
+    },
+    {
+      "id": "logo-11-tju_shield_border_tp",
+      "base": "tju_shield_border_tp",
+      "name": "北洋盾（边框）",
+      "category": "辅助图形",
+      "color": "北洋蓝/透明",
+      "lang": "",
+      "orientation": "",
+      "cardBg": "checker",
+      "preview": "images/fill/svg/tju_shield_border_tp.svg",
+      "layouts": {
+        "fill": {
+          "png": "images/fill/png/tju_shield_border_tp.png",
+          "svg": "images/fill/svg/tju_shield_border_tp.svg",
+          "pdf": "images/fill/pdf/tju_shield_border_tp.pdf"
+        }
+      },
+      "tags": [
+        "辅助图形",
+        "北洋蓝/透明",
+        "填充"
+      ]
+    },
+    {
+      "id": "logo-12-tju_shield_fill",
+      "base": "tju_shield_fill",
+      "name": "北洋盾（填充）",
+      "category": "辅助图形",
+      "color": "北洋蓝/白",
+      "lang": "",
+      "orientation": "",
+      "cardBg": "blue",
+      "preview": "images/fill/svg/tju_shield_fill.svg",
+      "layouts": {
+        "fill": {
+          "png": "images/fill/png/tju_shield_fill.png",
+          "svg": "images/fill/svg/tju_shield_fill.svg",
+          "pdf": "images/fill/pdf/tju_shield_fill.pdf"
+        }
+      },
+      "tags": [
+        "辅助图形",
+        "北洋蓝/白",
+        "填充"
+      ]
+    },
+    {
+      "id": "logo-13-tju_shield_fill_tp",
+      "base": "tju_shield_fill_tp",
+      "name": "北洋盾（填充）",
+      "category": "辅助图形",
+      "color": "北洋蓝/透明",
+      "lang": "",
+      "orientation": "",
+      "cardBg": "checker",
+      "preview": "images/fill/svg/tju_shield_fill_tp.svg",
+      "layouts": {
+        "fill": {
+          "png": "images/fill/png/tju_shield_fill_tp.png",
+          "svg": "images/fill/svg/tju_shield_fill_tp.svg",
+          "pdf": "images/fill/pdf/tju_shield_fill_tp.pdf"
+        }
+      },
+      "tags": [
+        "辅助图形",
+        "北洋蓝/透明",
+        "填充"
+      ]
+    },
+    {
+      "id": "logo-14-tju_text_black",
+      "base": "tju_text_black",
+      "name": "校标",
+      "category": "字体标志",
+      "color": "黑/白",
+      "lang": "",
+      "orientation": "横向",
+      "cardBg": "light",
+      "preview": "images/fill/svg/tju_text_black.svg",
+      "layouts": {
+        "fill": {
+          "png": "images/fill/png/tju_text_black.png",
+          "svg": "images/fill/svg/tju_text_black.svg",
+          "pdf": "images/fill/pdf/tju_text_black.pdf"
+        }
+      },
+      "tags": [
+        "字体标志",
+        "黑/白",
+        "横向",
+        "填充"
+      ]
+    },
+    {
+      "id": "logo-15-tju_text_blue",
+      "base": "tju_text_blue",
+      "name": "校标",
+      "category": "字体标志",
+      "color": "白/北洋蓝",
+      "lang": "",
+      "orientation": "横向",
+      "cardBg": "white",
+      "preview": "images/fill/svg/tju_text_blue.svg",
+      "layouts": {
+        "fill": {
+          "png": "images/fill/png/tju_text_blue.png",
+          "svg": "images/fill/svg/tju_text_blue.svg",
+          "pdf": "images/fill/pdf/tju_text_blue.pdf"
+        }
+      },
+      "tags": [
+        "字体标志",
+        "白/北洋蓝",
+        "横向",
+        "填充"
+      ]
+    },
+    {
+      "id": "logo-16-tju_text_cn_black",
+      "base": "tju_text_cn_black",
+      "name": "校标（中文）",
+      "category": "字体标志",
+      "color": "黑/白",
+      "lang": "中文",
+      "orientation": "横向",
+      "cardBg": "light",
+      "preview": "images/fill/svg/tju_text_cn_black.svg",
+      "layouts": {
+        "fill": {
+          "png": "images/fill/png/tju_text_cn_black.png",
+          "svg": "images/fill/svg/tju_text_cn_black.svg",
+          "pdf": "images/fill/pdf/tju_text_cn_black.pdf"
+        },
+        "padding": {
+          "png": "images/padding/png/tju_text_cn_black_padding.png",
+          "svg": "images/padding/svg/tju_text_cn_black_padding.svg",
+          "pdf": "images/padding/pdf/tju_text_cn_black_padding.pdf"
+        }
+      },
+      "tags": [
+        "字体标志",
+        "黑/白",
+        "中文",
+        "横向",
+        "填充",
+        "独立区域"
+      ]
+    },
+    {
+      "id": "logo-17-tju_text_cn_black_vert",
+      "base": "tju_text_cn_black_vert",
+      "name": "校标（中文，纵向）",
+      "category": "字体标志",
+      "color": "黑/白",
+      "lang": "中文",
+      "orientation": "纵向",
+      "cardBg": "light",
+      "preview": "images/fill/svg/tju_text_cn_black_vert.svg",
+      "layouts": {
+        "fill": {
+          "png": "images/fill/png/tju_text_cn_black_vert.png",
+          "svg": "images/fill/svg/tju_text_cn_black_vert.svg",
+          "pdf": "images/fill/pdf/tju_text_cn_black_vert.pdf"
+        },
+        "padding": {
+          "png": "images/padding/png/tju_text_cn_black_vert_padding.png",
+          "svg": "images/padding/svg/tju_text_cn_black_vert_padding.svg",
+          "pdf": "images/padding/pdf/tju_text_cn_black_vert_padding.pdf"
+        }
+      },
+      "tags": [
+        "字体标志",
+        "黑/白",
+        "中文",
+        "纵向",
+        "填充",
+        "独立区域"
+      ]
+    },
+    {
+      "id": "logo-18-tju_text_cn_blue",
+      "base": "tju_text_cn_blue",
+      "name": "校标（中文）",
+      "category": "字体标志",
+      "color": "白/北洋蓝",
+      "lang": "中文",
+      "orientation": "横向",
+      "cardBg": "white",
+      "preview": "images/fill/svg/tju_text_cn_blue.svg",
+      "layouts": {
+        "fill": {
+          "png": "images/fill/png/tju_text_cn_blue.png",
+          "svg": "images/fill/svg/tju_text_cn_blue.svg",
+          "pdf": "images/fill/pdf/tju_text_cn_blue.pdf"
+        },
+        "padding": {
+          "png": "images/padding/png/tju_text_cn_blue_padding.png",
+          "svg": "images/padding/svg/tju_text_cn_blue_padding.svg",
+          "pdf": "images/padding/pdf/tju_text_cn_blue_padding.pdf"
+        }
+      },
+      "tags": [
+        "字体标志",
+        "白/北洋蓝",
+        "中文",
+        "横向",
+        "填充",
+        "独立区域"
+      ]
+    },
+    {
+      "id": "logo-19-tju_text_cn_blue_vert",
+      "base": "tju_text_cn_blue_vert",
+      "name": "校标（中文，纵向）",
+      "category": "字体标志",
+      "color": "白/北洋蓝",
+      "lang": "中文",
+      "orientation": "纵向",
+      "cardBg": "white",
+      "preview": "images/fill/svg/tju_text_cn_blue_vert.svg",
+      "layouts": {
+        "fill": {
+          "png": "images/fill/png/tju_text_cn_blue_vert.png",
+          "svg": "images/fill/svg/tju_text_cn_blue_vert.svg",
+          "pdf": "images/fill/pdf/tju_text_cn_blue_vert.pdf"
+        },
+        "padding": {
+          "png": "images/padding/png/tju_text_cn_blue_vert_padding.png",
+          "svg": "images/padding/svg/tju_text_cn_blue_vert_padding.svg",
+          "pdf": "images/padding/pdf/tju_text_cn_blue_vert_padding.pdf"
+        }
+      },
+      "tags": [
+        "字体标志",
+        "白/北洋蓝",
+        "中文",
+        "纵向",
+        "填充",
+        "独立区域"
+      ]
+    },
+    {
+      "id": "logo-20-tju_text_cn_tp",
+      "base": "tju_text_cn_tp",
+      "name": "校标（中文）",
+      "category": "字体标志",
+      "color": "北洋蓝/透明",
+      "lang": "中文",
+      "orientation": "横向",
+      "cardBg": "checker",
+      "preview": "images/fill/svg/tju_text_cn_tp.svg",
+      "layouts": {
+        "fill": {
+          "png": "images/fill/png/tju_text_cn_tp.png",
+          "svg": "images/fill/svg/tju_text_cn_tp.svg",
+          "pdf": "images/fill/pdf/tju_text_cn_tp.pdf"
+        },
+        "padding": {
+          "png": "images/padding/png/tju_text_cn_tp_padding.png",
+          "svg": "images/padding/svg/tju_text_cn_tp_padding.svg",
+          "pdf": "images/padding/pdf/tju_text_cn_tp_padding.pdf"
+        }
+      },
+      "tags": [
+        "字体标志",
+        "北洋蓝/透明",
+        "中文",
+        "横向",
+        "填充",
+        "独立区域"
+      ]
+    },
+    {
+      "id": "logo-21-tju_text_cn_tp_vert",
+      "base": "tju_text_cn_tp_vert",
+      "name": "校标（中文，纵向）",
+      "category": "字体标志",
+      "color": "北洋蓝/透明",
+      "lang": "中文",
+      "orientation": "纵向",
+      "cardBg": "checker",
+      "preview": "images/fill/svg/tju_text_cn_tp_vert.svg",
+      "layouts": {
+        "fill": {
+          "png": "images/fill/png/tju_text_cn_tp_vert.png",
+          "svg": "images/fill/svg/tju_text_cn_tp_vert.svg",
+          "pdf": "images/fill/pdf/tju_text_cn_tp_vert.pdf"
+        },
+        "padding": {
+          "png": "images/padding/png/tju_text_cn_tp_vert_padding.png",
+          "svg": "images/padding/svg/tju_text_cn_tp_vert_padding.svg",
+          "pdf": "images/padding/pdf/tju_text_cn_tp_vert_padding.pdf"
+        }
+      },
+      "tags": [
+        "字体标志",
+        "北洋蓝/透明",
+        "中文",
+        "纵向",
+        "填充",
+        "独立区域"
+      ]
+    },
+    {
+      "id": "logo-22-tju_text_cn_white",
+      "base": "tju_text_cn_white",
+      "name": "校标（中文）",
+      "category": "字体标志",
+      "color": "北洋蓝/白",
+      "lang": "中文",
+      "orientation": "横向",
+      "cardBg": "blue",
+      "preview": "images/fill/svg/tju_text_cn_white.svg",
+      "layouts": {
+        "fill": {
+          "png": "images/fill/png/tju_text_cn_white.png",
+          "svg": "images/fill/svg/tju_text_cn_white.svg",
+          "pdf": "images/fill/pdf/tju_text_cn_white.pdf"
+        },
+        "padding": {
+          "png": "images/padding/png/tju_text_cn_white_padding.png",
+          "svg": "images/padding/svg/tju_text_cn_white_padding.svg",
+          "pdf": "images/padding/pdf/tju_text_cn_white_padding.pdf"
+        }
+      },
+      "tags": [
+        "字体标志",
+        "北洋蓝/白",
+        "中文",
+        "横向",
+        "填充",
+        "独立区域"
+      ]
+    },
+    {
+      "id": "logo-23-tju_text_cn_white_vert",
+      "base": "tju_text_cn_white_vert",
+      "name": "校标（中文，纵向）",
+      "category": "字体标志",
+      "color": "北洋蓝/白",
+      "lang": "中文",
+      "orientation": "纵向",
+      "cardBg": "blue",
+      "preview": "images/fill/svg/tju_text_cn_white_vert.svg",
+      "layouts": {
+        "fill": {
+          "png": "images/fill/png/tju_text_cn_white_vert.png",
+          "svg": "images/fill/svg/tju_text_cn_white_vert.svg",
+          "pdf": "images/fill/pdf/tju_text_cn_white_vert.pdf"
+        },
+        "padding": {
+          "png": "images/padding/png/tju_text_cn_white_vert_padding.png",
+          "svg": "images/padding/svg/tju_text_cn_white_vert_padding.svg",
+          "pdf": "images/padding/pdf/tju_text_cn_white_vert_padding.pdf"
+        }
+      },
+      "tags": [
+        "字体标志",
+        "北洋蓝/白",
+        "中文",
+        "纵向",
+        "填充",
+        "独立区域"
+      ]
+    },
+    {
+      "id": "logo-24-tju_text_en_black",
+      "base": "tju_text_en_black",
+      "name": "校标（英文）",
+      "category": "字体标志",
+      "color": "黑/白",
+      "lang": "英文",
+      "orientation": "横向",
+      "cardBg": "light",
+      "preview": "images/fill/svg/tju_text_en_black.svg",
+      "layouts": {
+        "fill": {
+          "png": "images/fill/png/tju_text_en_black.png",
+          "svg": "images/fill/svg/tju_text_en_black.svg",
+          "pdf": "images/fill/pdf/tju_text_en_black.pdf"
+        },
+        "padding": {
+          "png": "images/padding/png/tju_text_en_black_padding.png",
+          "svg": "images/padding/svg/tju_text_en_black_padding.svg",
+          "pdf": "images/padding/pdf/tju_text_en_black_padding.pdf"
+        }
+      },
+      "tags": [
+        "字体标志",
+        "黑/白",
+        "英文",
+        "横向",
+        "填充",
+        "独立区域"
+      ]
+    },
+    {
+      "id": "logo-25-tju_text_en_black_vert",
+      "base": "tju_text_en_black_vert",
+      "name": "校标（英文，纵向）",
+      "category": "字体标志",
+      "color": "黑/白",
+      "lang": "英文",
+      "orientation": "纵向",
+      "cardBg": "light",
+      "preview": "images/fill/svg/tju_text_en_black_vert.svg",
+      "layouts": {
+        "fill": {
+          "png": "images/fill/png/tju_text_en_black_vert.png",
+          "svg": "images/fill/svg/tju_text_en_black_vert.svg",
+          "pdf": "images/fill/pdf/tju_text_en_black_vert.pdf"
+        },
+        "padding": {
+          "png": "images/padding/png/tju_text_en_black_vert_padding.png",
+          "svg": "images/padding/svg/tju_text_en_black_vert_padding.svg",
+          "pdf": "images/padding/pdf/tju_text_en_black_vert_padding.pdf"
+        }
+      },
+      "tags": [
+        "字体标志",
+        "黑/白",
+        "英文",
+        "纵向",
+        "填充",
+        "独立区域"
+      ]
+    },
+    {
+      "id": "logo-26-tju_text_en_blue",
+      "base": "tju_text_en_blue",
+      "name": "校标（英文）",
+      "category": "字体标志",
+      "color": "白/北洋蓝",
+      "lang": "英文",
+      "orientation": "横向",
+      "cardBg": "white",
+      "preview": "images/fill/svg/tju_text_en_blue.svg",
+      "layouts": {
+        "fill": {
+          "png": "images/fill/png/tju_text_en_blue.png",
+          "svg": "images/fill/svg/tju_text_en_blue.svg",
+          "pdf": "images/fill/pdf/tju_text_en_blue.pdf"
+        },
+        "padding": {
+          "png": "images/padding/png/tju_text_en_blue_padding.png",
+          "svg": "images/padding/svg/tju_text_en_blue_padding.svg",
+          "pdf": "images/padding/pdf/tju_text_en_blue_padding.pdf"
+        }
+      },
+      "tags": [
+        "字体标志",
+        "白/北洋蓝",
+        "英文",
+        "横向",
+        "填充",
+        "独立区域"
+      ]
+    },
+    {
+      "id": "logo-27-tju_text_en_blue_vert",
+      "base": "tju_text_en_blue_vert",
+      "name": "校标（英文，纵向）",
+      "category": "字体标志",
+      "color": "白/北洋蓝",
+      "lang": "英文",
+      "orientation": "纵向",
+      "cardBg": "white",
+      "preview": "images/fill/svg/tju_text_en_blue_vert.svg",
+      "layouts": {
+        "fill": {
+          "png": "images/fill/png/tju_text_en_blue_vert.png",
+          "svg": "images/fill/svg/tju_text_en_blue_vert.svg",
+          "pdf": "images/fill/pdf/tju_text_en_blue_vert.pdf"
+        },
+        "padding": {
+          "png": "images/padding/png/tju_text_en_blue_vert_padding.png",
+          "svg": "images/padding/svg/tju_text_en_blue_vert_padding.svg",
+          "pdf": "images/padding/pdf/tju_text_en_blue_vert_padding.pdf"
+        }
+      },
+      "tags": [
+        "字体标志",
+        "白/北洋蓝",
+        "英文",
+        "纵向",
+        "填充",
+        "独立区域"
+      ]
+    },
+    {
+      "id": "logo-28-tju_text_en_tp",
+      "base": "tju_text_en_tp",
+      "name": "校标（英文）",
+      "category": "字体标志",
+      "color": "北洋蓝/透明",
+      "lang": "英文",
+      "orientation": "横向",
+      "cardBg": "checker",
+      "preview": "images/fill/svg/tju_text_en_tp.svg",
+      "layouts": {
+        "fill": {
+          "png": "images/fill/png/tju_text_en_tp.png",
+          "svg": "images/fill/svg/tju_text_en_tp.svg",
+          "pdf": "images/fill/pdf/tju_text_en_tp.pdf"
+        },
+        "padding": {
+          "png": "images/padding/png/tju_text_en_tp_padding.png",
+          "svg": "images/padding/svg/tju_text_en_tp_padding.svg",
+          "pdf": "images/padding/pdf/tju_text_en_tp_padding.pdf"
+        }
+      },
+      "tags": [
+        "字体标志",
+        "北洋蓝/透明",
+        "英文",
+        "横向",
+        "填充",
+        "独立区域"
+      ]
+    },
+    {
+      "id": "logo-29-tju_text_en_tp_vert",
+      "base": "tju_text_en_tp_vert",
+      "name": "校标（英文，纵向）",
+      "category": "字体标志",
+      "color": "北洋蓝/透明",
+      "lang": "英文",
+      "orientation": "纵向",
+      "cardBg": "checker",
+      "preview": "images/fill/svg/tju_text_en_tp_vert.svg",
+      "layouts": {
+        "fill": {
+          "png": "images/fill/png/tju_text_en_tp_vert.png",
+          "svg": "images/fill/svg/tju_text_en_tp_vert.svg",
+          "pdf": "images/fill/pdf/tju_text_en_tp_vert.pdf"
+        },
+        "padding": {
+          "png": "images/padding/png/tju_text_en_tp_vert_padding.png",
+          "svg": "images/padding/svg/tju_text_en_tp_vert_padding.svg",
+          "pdf": "images/padding/pdf/tju_text_en_tp_vert_padding.pdf"
+        }
+      },
+      "tags": [
+        "字体标志",
+        "北洋蓝/透明",
+        "英文",
+        "纵向",
+        "填充",
+        "独立区域"
+      ]
+    },
+    {
+      "id": "logo-30-tju_text_en_white",
+      "base": "tju_text_en_white",
+      "name": "校标（英文）",
+      "category": "字体标志",
+      "color": "北洋蓝/白",
+      "lang": "英文",
+      "orientation": "横向",
+      "cardBg": "blue",
+      "preview": "images/fill/svg/tju_text_en_white.svg",
+      "layouts": {
+        "fill": {
+          "png": "images/fill/png/tju_text_en_white.png",
+          "svg": "images/fill/svg/tju_text_en_white.svg",
+          "pdf": "images/fill/pdf/tju_text_en_white.pdf"
+        },
+        "padding": {
+          "png": "images/padding/png/tju_text_en_white_padding.png",
+          "svg": "images/padding/svg/tju_text_en_white_padding.svg",
+          "pdf": "images/padding/pdf/tju_text_en_white_padding.pdf"
+        }
+      },
+      "tags": [
+        "字体标志",
+        "北洋蓝/白",
+        "英文",
+        "横向",
+        "填充",
+        "独立区域"
+      ]
+    },
+    {
+      "id": "logo-31-tju_text_en_white_vert",
+      "base": "tju_text_en_white_vert",
+      "name": "校标（英文，纵向）",
+      "category": "字体标志",
+      "color": "北洋蓝/白",
+      "lang": "英文",
+      "orientation": "纵向",
+      "cardBg": "blue",
+      "preview": "images/fill/svg/tju_text_en_white_vert.svg",
+      "layouts": {
+        "fill": {
+          "png": "images/fill/png/tju_text_en_white_vert.png",
+          "svg": "images/fill/svg/tju_text_en_white_vert.svg",
+          "pdf": "images/fill/pdf/tju_text_en_white_vert.pdf"
+        },
+        "padding": {
+          "png": "images/padding/png/tju_text_en_white_vert_padding.png",
+          "svg": "images/padding/svg/tju_text_en_white_vert_padding.svg",
+          "pdf": "images/padding/pdf/tju_text_en_white_vert_padding.pdf"
+        }
+      },
+      "tags": [
+        "字体标志",
+        "北洋蓝/白",
+        "英文",
+        "纵向",
+        "填充",
+        "独立区域"
+      ]
+    },
+    {
+      "id": "logo-32-tju_text_tp",
+      "base": "tju_text_tp",
+      "name": "校标",
+      "category": "字体标志",
+      "color": "北洋蓝/透明",
+      "lang": "",
+      "orientation": "横向",
+      "cardBg": "checker",
+      "preview": "images/fill/svg/tju_text_tp.svg",
+      "layouts": {
+        "fill": {
+          "png": "images/fill/png/tju_text_tp.png",
+          "svg": "images/fill/svg/tju_text_tp.svg",
+          "pdf": "images/fill/pdf/tju_text_tp.pdf"
+        }
+      },
+      "tags": [
+        "字体标志",
+        "北洋蓝/透明",
+        "横向",
+        "填充"
+      ]
+    },
+    {
+      "id": "logo-33-tju_text_white",
+      "base": "tju_text_white",
+      "name": "校标",
+      "category": "字体标志",
+      "color": "北洋蓝/白",
+      "lang": "",
+      "orientation": "横向",
+      "cardBg": "blue",
+      "preview": "images/fill/svg/tju_text_white.svg",
+      "layouts": {
+        "fill": {
+          "png": "images/fill/png/tju_text_white.png",
+          "svg": "images/fill/svg/tju_text_white.svg",
+          "pdf": "images/fill/pdf/tju_text_white.pdf"
+        }
+      },
+      "tags": [
+        "字体标志",
+        "北洋蓝/白",
+        "横向",
+        "填充"
+      ]
+    },
+    {
+      "id": "logo-34-tju_tp",
+      "base": "tju_tp",
+      "name": "校徽校标",
+      "category": "标准组合",
+      "color": "北洋蓝/透明",
+      "lang": "",
+      "orientation": "横向",
+      "cardBg": "checker",
+      "preview": "images/fill/svg/tju_tp.svg",
+      "layouts": {
+        "fill": {
+          "png": "images/fill/png/tju_tp.png",
+          "svg": "images/fill/svg/tju_tp.svg",
+          "pdf": "images/fill/pdf/tju_tp.pdf"
+        },
+        "padding": {
+          "png": "images/padding/png/tju_tp_padding.png",
+          "svg": "images/padding/svg/tju_tp_padding.svg",
+          "pdf": "images/padding/pdf/tju_tp_padding.pdf"
+        }
+      },
+      "tags": [
+        "标准组合",
+        "北洋蓝/透明",
+        "横向",
+        "填充",
+        "独立区域"
+      ]
+    },
+    {
+      "id": "logo-35-tju_tp_cn",
+      "base": "tju_tp_cn",
+      "name": "校徽校标（中文）",
+      "category": "标准组合",
+      "color": "北洋蓝/透明",
+      "lang": "中文",
+      "orientation": "横向",
+      "cardBg": "checker",
+      "preview": "images/fill/svg/tju_tp_cn.svg",
+      "layouts": {
+        "fill": {
+          "png": "images/fill/png/tju_tp_cn.png",
+          "svg": "images/fill/svg/tju_tp_cn.svg",
+          "pdf": "images/fill/pdf/tju_tp_cn.pdf"
+        },
+        "padding": {
+          "png": "images/padding/png/tju_tp_cn_padding.png",
+          "svg": "images/padding/svg/tju_tp_cn_padding.svg",
+          "pdf": "images/padding/pdf/tju_tp_cn_padding.pdf"
+        }
+      },
+      "tags": [
+        "标准组合",
+        "北洋蓝/透明",
+        "中文",
+        "横向",
+        "填充",
+        "独立区域"
+      ]
+    },
+    {
+      "id": "logo-36-tju_tp_cn_vert",
+      "base": "tju_tp_cn_vert",
+      "name": "校徽校标（中文，纵向）",
+      "category": "标准组合",
+      "color": "北洋蓝/透明",
+      "lang": "中文",
+      "orientation": "纵向",
+      "cardBg": "checker",
+      "preview": "images/fill/svg/tju_tp_cn_vert.svg",
+      "layouts": {
+        "fill": {
+          "png": "images/fill/png/tju_tp_cn_vert.png",
+          "svg": "images/fill/svg/tju_tp_cn_vert.svg",
+          "pdf": "images/fill/pdf/tju_tp_cn_vert.pdf"
+        },
+        "padding": {
+          "png": "images/padding/png/tju_tp_cn_vert_padding.png",
+          "svg": "images/padding/svg/tju_tp_cn_vert_padding.svg",
+          "pdf": "images/padding/pdf/tju_tp_cn_vert_padding.pdf"
+        }
+      },
+      "tags": [
+        "标准组合",
+        "北洋蓝/透明",
+        "中文",
+        "纵向",
+        "填充",
+        "独立区域"
+      ]
+    },
+    {
+      "id": "logo-37-tju_tp_en",
+      "base": "tju_tp_en",
+      "name": "校徽校标（英文）",
+      "category": "标准组合",
+      "color": "北洋蓝/透明",
+      "lang": "英文",
+      "orientation": "横向",
+      "cardBg": "checker",
+      "preview": "images/fill/svg/tju_tp_en.svg",
+      "layouts": {
+        "fill": {
+          "png": "images/fill/png/tju_tp_en.png",
+          "svg": "images/fill/svg/tju_tp_en.svg",
+          "pdf": "images/fill/pdf/tju_tp_en.pdf"
+        },
+        "padding": {
+          "png": "images/padding/png/tju_tp_en_padding.png",
+          "svg": "images/padding/svg/tju_tp_en_padding.svg",
+          "pdf": "images/padding/pdf/tju_tp_en_padding.pdf"
+        }
+      },
+      "tags": [
+        "标准组合",
+        "北洋蓝/透明",
+        "英文",
+        "横向",
+        "填充",
+        "独立区域"
+      ]
+    },
+    {
+      "id": "logo-38-tju_tp_en_vert",
+      "base": "tju_tp_en_vert",
+      "name": "校徽校标（英文，纵向）",
+      "category": "标准组合",
+      "color": "北洋蓝/透明",
+      "lang": "英文",
+      "orientation": "纵向",
+      "cardBg": "checker",
+      "preview": "images/fill/svg/tju_tp_en_vert.svg",
+      "layouts": {
+        "fill": {
+          "png": "images/fill/png/tju_tp_en_vert.png",
+          "svg": "images/fill/svg/tju_tp_en_vert.svg",
+          "pdf": "images/fill/pdf/tju_tp_en_vert.pdf"
+        },
+        "padding": {
+          "png": "images/padding/png/tju_tp_en_vert_padding.png",
+          "svg": "images/padding/svg/tju_tp_en_vert_padding.svg",
+          "pdf": "images/padding/pdf/tju_tp_en_vert_padding.pdf"
+        }
+      },
+      "tags": [
+        "标准组合",
+        "北洋蓝/透明",
+        "英文",
+        "纵向",
+        "填充",
+        "独立区域"
+      ]
+    },
+    {
+      "id": "logo-39-tju_tp_vert_ht",
+      "base": "tju_tp_vert_ht",
+      "name": "校徽校标（横文纵排）",
+      "category": "标准组合",
+      "color": "北洋蓝/透明",
+      "lang": "",
+      "orientation": "横文纵排",
+      "cardBg": "checker",
+      "preview": "images/fill/svg/tju_tp_vert_ht.svg",
+      "layouts": {
+        "fill": {
+          "png": "images/fill/png/tju_tp_vert_ht.png",
+          "svg": "images/fill/svg/tju_tp_vert_ht.svg",
+          "pdf": "images/fill/pdf/tju_tp_vert_ht.pdf"
+        },
+        "padding": {
+          "png": "images/padding/png/tju_tp_vert_ht_padding.png",
+          "svg": "images/padding/svg/tju_tp_vert_ht_padding.svg",
+          "pdf": "images/padding/pdf/tju_tp_vert_ht_padding.pdf"
+        }
+      },
+      "tags": [
+        "标准组合",
+        "北洋蓝/透明",
+        "横文纵排",
+        "填充",
+        "独立区域"
+      ]
+    },
+    {
+      "id": "logo-40-tju_tp_vert_vt",
+      "base": "tju_tp_vert_vt",
+      "name": "校徽校标（纵文纵排）",
+      "category": "标准组合",
+      "color": "北洋蓝/透明",
+      "lang": "",
+      "orientation": "纵文纵排",
+      "cardBg": "checker",
+      "preview": "images/fill/svg/tju_tp_vert_vt.svg",
+      "layouts": {
+        "fill": {
+          "png": "images/fill/png/tju_tp_vert_vt.png",
+          "svg": "images/fill/svg/tju_tp_vert_vt.svg",
+          "pdf": "images/fill/pdf/tju_tp_vert_vt.pdf"
+        },
+        "padding": {
+          "png": "images/padding/png/tju_tp_vert_vt_padding.png",
+          "svg": "images/padding/svg/tju_tp_vert_vt_padding.svg",
+          "pdf": "images/padding/pdf/tju_tp_vert_vt_padding.pdf"
+        }
+      },
+      "tags": [
+        "标准组合",
+        "北洋蓝/透明",
+        "纵文纵排",
+        "填充",
+        "独立区域"
+      ]
+    },
+    {
+      "id": "logo-41-tju_white",
+      "base": "tju_white",
+      "name": "校徽校标",
+      "category": "标准组合",
+      "color": "北洋蓝/白",
+      "lang": "",
+      "orientation": "横向",
+      "cardBg": "blue",
+      "preview": "images/fill/svg/tju_white.svg",
+      "layouts": {
+        "fill": {
+          "png": "images/fill/png/tju_white.png",
+          "svg": "images/fill/svg/tju_white.svg",
+          "pdf": "images/fill/pdf/tju_white.pdf"
+        },
+        "padding": {
+          "png": "images/padding/png/tju_white_padding.png",
+          "svg": "images/padding/svg/tju_white_padding.svg",
+          "pdf": "images/padding/pdf/tju_white_padding.pdf"
+        }
+      },
+      "tags": [
+        "标准组合",
+        "北洋蓝/白",
+        "横向",
+        "填充",
+        "独立区域"
+      ]
+    },
+    {
+      "id": "logo-42-tju_white_cn",
+      "base": "tju_white_cn",
+      "name": "校徽校标（中文）",
+      "category": "标准组合",
+      "color": "北洋蓝/白",
+      "lang": "中文",
+      "orientation": "横向",
+      "cardBg": "blue",
+      "preview": "images/fill/svg/tju_white_cn.svg",
+      "layouts": {
+        "fill": {
+          "png": "images/fill/png/tju_white_cn.png",
+          "svg": "images/fill/svg/tju_white_cn.svg",
+          "pdf": "images/fill/pdf/tju_white_cn.pdf"
+        },
+        "padding": {
+          "png": "images/padding/png/tju_white_cn_padding.png",
+          "svg": "images/padding/svg/tju_white_cn_padding.svg",
+          "pdf": "images/padding/pdf/tju_white_cn_padding.pdf"
+        }
+      },
+      "tags": [
+        "标准组合",
+        "北洋蓝/白",
+        "中文",
+        "横向",
+        "填充",
+        "独立区域"
+      ]
+    },
+    {
+      "id": "logo-43-tju_white_cn_vert",
+      "base": "tju_white_cn_vert",
+      "name": "校徽校标（中文，纵向）",
+      "category": "标准组合",
+      "color": "北洋蓝/白",
+      "lang": "中文",
+      "orientation": "纵向",
+      "cardBg": "blue",
+      "preview": "images/fill/svg/tju_white_cn_vert.svg",
+      "layouts": {
+        "fill": {
+          "png": "images/fill/png/tju_white_cn_vert.png",
+          "svg": "images/fill/svg/tju_white_cn_vert.svg",
+          "pdf": "images/fill/pdf/tju_white_cn_vert.pdf"
+        },
+        "padding": {
+          "png": "images/padding/png/tju_white_cn_vert_padding.png",
+          "svg": "images/padding/svg/tju_white_cn_vert_padding.svg",
+          "pdf": "images/padding/pdf/tju_white_cn_vert_padding.pdf"
+        }
+      },
+      "tags": [
+        "标准组合",
+        "北洋蓝/白",
+        "中文",
+        "纵向",
+        "填充",
+        "独立区域"
+      ]
+    },
+    {
+      "id": "logo-44-tju_white_en",
+      "base": "tju_white_en",
+      "name": "校徽校标（英文）",
+      "category": "标准组合",
+      "color": "北洋蓝/白",
+      "lang": "英文",
+      "orientation": "横向",
+      "cardBg": "blue",
+      "preview": "images/fill/svg/tju_white_en.svg",
+      "layouts": {
+        "fill": {
+          "png": "images/fill/png/tju_white_en.png",
+          "svg": "images/fill/svg/tju_white_en.svg",
+          "pdf": "images/fill/pdf/tju_white_en.pdf"
+        },
+        "padding": {
+          "png": "images/padding/png/tju_white_en_padding.png",
+          "svg": "images/padding/svg/tju_white_en_padding.svg",
+          "pdf": "images/padding/pdf/tju_white_en_padding.pdf"
+        }
+      },
+      "tags": [
+        "标准组合",
+        "北洋蓝/白",
+        "英文",
+        "横向",
+        "填充",
+        "独立区域"
+      ]
+    },
+    {
+      "id": "logo-45-tju_white_en_vert",
+      "base": "tju_white_en_vert",
+      "name": "校徽校标（英文，纵向）",
+      "category": "标准组合",
+      "color": "北洋蓝/白",
+      "lang": "英文",
+      "orientation": "纵向",
+      "cardBg": "blue",
+      "preview": "images/fill/svg/tju_white_en_vert.svg",
+      "layouts": {
+        "fill": {
+          "png": "images/fill/png/tju_white_en_vert.png",
+          "svg": "images/fill/svg/tju_white_en_vert.svg",
+          "pdf": "images/fill/pdf/tju_white_en_vert.pdf"
+        },
+        "padding": {
+          "png": "images/padding/png/tju_white_en_vert_padding.png",
+          "svg": "images/padding/svg/tju_white_en_vert_padding.svg",
+          "pdf": "images/padding/pdf/tju_white_en_vert_padding.pdf"
+        }
+      },
+      "tags": [
+        "标准组合",
+        "北洋蓝/白",
+        "英文",
+        "纵向",
+        "填充",
+        "独立区域"
+      ]
+    },
+    {
+      "id": "logo-46-tju_white_vert_ht",
+      "base": "tju_white_vert_ht",
+      "name": "校徽校标（横文纵排）",
+      "category": "标准组合",
+      "color": "北洋蓝/白",
+      "lang": "",
+      "orientation": "横文纵排",
+      "cardBg": "blue",
+      "preview": "images/fill/svg/tju_white_vert_ht.svg",
+      "layouts": {
+        "fill": {
+          "png": "images/fill/png/tju_white_vert_ht.png",
+          "svg": "images/fill/svg/tju_white_vert_ht.svg",
+          "pdf": "images/fill/pdf/tju_white_vert_ht.pdf"
+        },
+        "padding": {
+          "png": "images/padding/png/tju_white_vert_ht_padding.png",
+          "svg": "images/padding/svg/tju_white_vert_ht_padding.svg",
+          "pdf": "images/padding/pdf/tju_white_vert_ht_padding.pdf"
+        }
+      },
+      "tags": [
+        "标准组合",
+        "北洋蓝/白",
+        "横文纵排",
+        "填充",
+        "独立区域"
+      ]
+    },
+    {
+      "id": "logo-47-tju_white_vert_vt",
+      "base": "tju_white_vert_vt",
+      "name": "校徽校标（纵文纵排）",
+      "category": "标准组合",
+      "color": "北洋蓝/白",
+      "lang": "",
+      "orientation": "纵文纵排",
+      "cardBg": "blue",
+      "preview": "images/fill/svg/tju_white_vert_vt.svg",
+      "layouts": {
+        "fill": {
+          "png": "images/fill/png/tju_white_vert_vt.png",
+          "svg": "images/fill/svg/tju_white_vert_vt.svg",
+          "pdf": "images/fill/pdf/tju_white_vert_vt.pdf"
+        },
+        "padding": {
+          "png": "images/padding/png/tju_white_vert_vt_padding.png",
+          "svg": "images/padding/svg/tju_white_vert_vt_padding.svg",
+          "pdf": "images/padding/pdf/tju_white_vert_vt_padding.pdf"
+        }
+      },
+      "tags": [
+        "标准组合",
+        "北洋蓝/白",
+        "纵文纵排",
+        "填充",
+        "独立区域"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "name": "主楼",
+      "path": "official/main_building.jpg",
+      "type": "jpg",
+      "sizeBytes": 565118
+    },
+    {
+      "name": "北洋大学堂",
+      "path": "official/peiyang_university.jpg",
+      "type": "jpg",
+      "sizeBytes": 115119
+    },
+    {
+      "name": "天津大学标准校徽",
+      "path": "official/天津大学标准校徽.jpg",
+      "type": "jpg",
+      "sizeBytes": 272382
+    },
+    {
+      "name": "校训",
+      "path": "official/校训.jpg",
+      "type": "jpg",
+      "sizeBytes": 542004
+    },
+    {
+      "name": "VI 手册（2011 年）",
+      "path": "official/天津大学视觉形象识别手册_2011.pdf",
+      "type": "pdf",
+      "sizeBytes": 4806248
+    },
+    {
+      "name": "VI 手册（2012 年）",
+      "path": "official/天津大学视觉形象识别系统(TU VI)手册_2012.pdf",
+      "type": "pdf",
+      "sizeBytes": 12023603
+    },
+    {
+      "name": "配色方案",
+      "path": "official/配色方案.pdf",
+      "type": "pdf",
+      "sizeBytes": 1049928
+    }
+  ]
+}

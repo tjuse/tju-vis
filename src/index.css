@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+/* Dark mode via .dark class on <html> */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand colors — 北洋蓝 */
+  --color-peiyang-50:  #e6eef6;
+  --color-peiyang-100: #ccddf0;
+  --color-peiyang-200: #99bcdf;
+  --color-peiyang-300: #669aca;
+  --color-peiyang-400: #3379b5;
+  --color-peiyang-500: #00468c;
+  --color-peiyang-600: #003a77;
+  --color-peiyang-700: #002e60;
+  --color-peiyang-800: #00234a;
+  --color-peiyang-900: #001733;
+
+  /* Accessory colors */
+  --color-peiyang-gold:  #ffc800;
+  --color-peiyang-red:   #962800;
+  --color-peiyang-brown: #7d5014;
+  --color-peiyang-green: #005a1e;
+
+  /* Font family */
+  --font-sans: "Inter", "PingFang SC", "Microsoft YaHei", "Noto Sans SC", system-ui, sans-serif;
+}
+
+/* Base resets */
+@layer base {
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100;
+    font-family: var(--font-sans);
+    min-height: 100vh;
+  }
+
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-peiyang-500;
+  }
+}
+
+/* Checkerboard pattern for transparent logo previews */
+.checkerboard {
+  background-color: #ffffff;
+  background-image:
+    linear-gradient(45deg, #e0e0e0 25%, transparent 25%),
+    linear-gradient(-45deg, #e0e0e0 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, #e0e0e0 75%),
+    linear-gradient(-45deg, transparent 75%, #e0e0e0 75%);
+  background-size: 16px 16px;
+  background-position: 0 0, 0 8px, 8px -8px, -8px 0;
+}
+
+.dark .checkerboard {
+  background-color: #1a1a1a;
+  background-image:
+    linear-gradient(45deg, #2a2a2a 25%, transparent 25%),
+    linear-gradient(-45deg, #2a2a2a 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, #2a2a2a 75%),
+    linear-gradient(-45deg, transparent 75%, #2a2a2a 75%);
+}
+
+/* Scroll lock for lightbox */
+.scroll-locked {
+  overflow: hidden;
+}
+
+/* Smooth transitions for theme switch */
+* {
+  transition-property: background-color, border-color, color;
+  transition-duration: 150ms;
+  transition-timing-function: ease;
+}
+
+/* But don't transition transforms/opacity (breaks Framer Motion) */
+[data-framer-component-type],
+[style*="transform"],
+[style*="opacity"] {
+  transition: none !important;
+}
