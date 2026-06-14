@@ -8,46 +8,38 @@ interface Props {
   filters: Filters
   onChange: (f: Filters) => void
   categories: string[]
-  colors: string[]
+  foregrounds: string[]
+  backgrounds: string[]
   total: number
   filtered: number
 }
 
 const LAYOUTS = ['填充', '独立区域'] as const
 
-// ── Shared chip component ──────────────────────────────────────────────────────
+// ── Chip (no shared-layout animation — replaced with plain CSS transition) ──
 
 function FilterChip({
   label,
   active,
   onClick,
-  groupId,
 }: {
   label: string
   active: boolean
   onClick: () => void
-  groupId: string
 }) {
   return (
-    <button
+    <motion.button
       onClick={onClick}
+      whileTap={{ scale: 0.93 }}
       className={cn(
-        'relative px-3 py-1.5 rounded-lg text-sm font-medium transition-colors whitespace-nowrap',
+        'px-3 py-1.5 rounded-lg text-sm font-medium transition-colors whitespace-nowrap',
         active
-          ? 'text-white'
+          ? 'bg-peiyang-500 text-white'
           : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-800'
       )}
     >
-      {active && (
-        <motion.span
-          layoutId={`chip-bg-${groupId}`}
-          className="absolute inset-0 rounded-lg bg-peiyang-500"
-          style={{ zIndex: -1 }}
-          transition={{ type: 'spring', bounce: 0.2, duration: 0.4 }}
-        />
-      )}
       {label || '全部'}
-    </button>
+    </motion.button>
   )
 }
 
@@ -56,13 +48,11 @@ function FilterGroup({
   options,
   value,
   onChange,
-  groupId,
 }: {
   label: string
   options: string[]
   value: string
   onChange: (v: string) => void
-  groupId: string
 }) {
   return (
     <div className="flex items-start gap-3">
@@ -70,14 +60,13 @@ function FilterGroup({
         {label}
       </span>
       <div className="flex items-center gap-1 flex-wrap">
-        <FilterChip label="" active={value === ''} onClick={() => onChange('')} groupId={groupId} />
+        <FilterChip label="" active={value === ''} onClick={() => onChange('')} />
         {options.map(opt => (
           <FilterChip
             key={opt}
             label={opt}
             active={value === opt}
             onClick={() => onChange(opt)}
-            groupId={groupId}
           />
         ))}
       </div>
@@ -91,30 +80,34 @@ function DesktopFilters({
   filters,
   onChange,
   categories,
-  colors,
-}: Pick<Props, 'filters' | 'onChange' | 'categories' | 'colors'>) {
+  foregrounds,
+  backgrounds,
+}: Pick<Props, 'filters' | 'onChange' | 'categories' | 'foregrounds' | 'backgrounds'>) {
   return (
-    <div className="hidden sm:flex flex-row gap-6 overflow-x-auto pb-1">
+    <div className="hidden sm:flex flex-row flex-wrap gap-x-6 gap-y-3 pb-1">
       <FilterGroup
         label="分类"
         options={categories}
         value={filters.category}
         onChange={v => onChange({ ...filters, category: v })}
-        groupId="category"
       />
       <FilterGroup
-        label="配色"
-        options={colors}
-        value={filters.color}
-        onChange={v => onChange({ ...filters, color: v })}
-        groupId="color"
+        label="前景"
+        options={foregrounds}
+        value={filters.foreground}
+        onChange={v => onChange({ ...filters, foreground: v })}
+      />
+      <FilterGroup
+        label="背景"
+        options={backgrounds}
+        value={filters.background}
+        onChange={v => onChange({ ...filters, background: v })}
       />
       <FilterGroup
         label="版式"
         options={[...LAYOUTS]}
         value={filters.layout}
         onChange={v => onChange({ ...filters, layout: v })}
-        groupId="layout"
       />
     </div>
   )
@@ -128,7 +121,8 @@ function MobileFilterSheet({
   filters,
   onChange,
   categories,
-  colors,
+  foregrounds,
+  backgrounds,
   filtered,
 }: {
   open: boolean
@@ -136,7 +130,8 @@ function MobileFilterSheet({
   filters: Filters
   onChange: (f: Filters) => void
   categories: string[]
-  colors: string[]
+  foregrounds: string[]
+  backgrounds: string[]
   filtered: number
 }) {
   // Scroll-lock while open
@@ -155,10 +150,12 @@ function MobileFilterSheet({
   }, [open, onClose])
 
   function reset() {
-    onChange({ ...filters, category: '', color: '', layout: '' })
+    onChange({ ...filters, category: '', foreground: '', background: '', layout: '' })
   }
 
-  const hasActiveFilters = filters.category !== '' || filters.color !== '' || filters.layout !== ''
+  const hasActiveFilters =
+    filters.category !== '' || filters.foreground !== '' ||
+    filters.background !== '' || filters.layout !== ''
 
   return (
     <AnimatePresence>
@@ -218,21 +215,24 @@ function MobileFilterSheet({
                 options={categories}
                 value={filters.category}
                 onChange={v => onChange({ ...filters, category: v })}
-                groupId="mob-category"
               />
               <FilterGroup
-                label="配色"
-                options={colors}
-                value={filters.color}
-                onChange={v => onChange({ ...filters, color: v })}
-                groupId="mob-color"
+                label="前景"
+                options={foregrounds}
+                value={filters.foreground}
+                onChange={v => onChange({ ...filters, foreground: v })}
+              />
+              <FilterGroup
+                label="背景"
+                options={backgrounds}
+                value={filters.background}
+                onChange={v => onChange({ ...filters, background: v })}
               />
               <FilterGroup
                 label="版式"
                 options={[...LAYOUTS]}
                 value={filters.layout}
                 onChange={v => onChange({ ...filters, layout: v })}
-                groupId="mob-layout"
               />
             </div>
 
@@ -262,16 +262,21 @@ function MobileFilterSheet({
 
 // ── Main FilterBar ────────────────────────────────────────────────────────────
 
-export function FilterBar({ filters, onChange, categories, colors, total, filtered }: Props) {
+export function FilterBar({
+  filters, onChange, categories, foregrounds, backgrounds, total, filtered,
+}: Props) {
   const [sheetOpen, setSheetOpen] = useState(false)
 
   const hasActiveFilters =
-    filters.category !== '' || filters.color !== '' || filters.layout !== '' || filters.search !== ''
+    filters.category !== '' || filters.foreground !== '' ||
+    filters.background !== '' || filters.layout !== '' || filters.search !== ''
 
-  const activeFilterCount = [filters.category, filters.color, filters.layout].filter(Boolean).length
+  const activeFilterCount =
+    [filters.category, filters.foreground, filters.background, filters.layout]
+      .filter(Boolean).length
 
   function reset() {
-    onChange({ category: '', color: '', layout: '', search: '' })
+    onChange({ category: '', foreground: '', background: '', layout: '', search: '' })
   }
 
   return (
@@ -379,7 +384,8 @@ export function FilterBar({ filters, onChange, categories, colors, total, filter
             filters={filters}
             onChange={onChange}
             categories={categories}
-            colors={colors}
+            foregrounds={foregrounds}
+            backgrounds={backgrounds}
           />
         </div>
       </div>
@@ -391,7 +397,8 @@ export function FilterBar({ filters, onChange, categories, colors, total, filter
         filters={filters}
         onChange={onChange}
         categories={categories}
-        colors={colors}
+        foregrounds={foregrounds}
+        backgrounds={backgrounds}
         filtered={filtered}
       />
     </>

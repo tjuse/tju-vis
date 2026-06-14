@@ -55,12 +55,13 @@ export default function App() {
             filters={filters}
             onChange={setFilters}
             categories={manifest.filterOptions.categories}
-            colors={manifest.filterOptions.colors}
+            foregrounds={manifest.filterOptions.foregrounds}
+            backgrounds={manifest.filterOptions.backgrounds}
             total={logos.length}
             filtered={filteredLogos.length}
           />
 
-          <LogoGrid logos={filteredLogos} onSelect={openLogo} />
+          <LogoGrid logos={filteredLogos} filters={filters} onSelect={openLogo} />
         </div>
       </main>
 

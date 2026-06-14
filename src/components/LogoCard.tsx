@@ -47,7 +47,6 @@ export function LogoCard({ logo, onOpen }: Props) {
 
   // Prefer padding variant for the card download row
   const displayFormats: FormatSet | undefined = logo.layouts.padding ?? logo.layouts.fill
-  const colorLabel = logo.color
   const hasMultipleLayouts = !!(logo.layouts.fill && logo.layouts.padding)
 
   return (
@@ -68,7 +67,7 @@ export function LogoCard({ logo, onOpen }: Props) {
       )}
       tabIndex={0}
       role="button"
-      aria-label={`预览 ${logo.name} ${colorLabel}`}
+      aria-label={`预览 ${logo.name} 前景${logo.colorFg} 背景${logo.colorBg}`}
       onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onOpen(logo) } }}
     >
       {/* Preview area — no fixed aspect ratio; card height follows logo's natural shape */}
@@ -82,7 +81,7 @@ export function LogoCard({ logo, onOpen }: Props) {
           {logo.preview ? (
             <img
               src={assetUrl(logo.preview)}
-              alt={`${logo.name} ${colorLabel}`}
+              alt={`${logo.name} ${logo.color}`}
               className="w-full h-auto max-h-[280px] object-contain"
               loading="lazy"
               decoding="async"
@@ -115,9 +114,16 @@ export function LogoCard({ logo, onOpen }: Props) {
             {logo.name}
           </h3>
           <div className="flex flex-wrap gap-1 mt-1">
-            <span className="px-1.5 py-0.5 rounded text-[10px] bg-peiyang-50 dark:bg-peiyang-900/30 text-peiyang-700 dark:text-peiyang-300 font-medium">
-              {colorLabel}
-            </span>
+            {logo.colorFg && (
+              <span className="px-1.5 py-0.5 rounded text-[10px] bg-peiyang-50 dark:bg-peiyang-900/30 text-peiyang-700 dark:text-peiyang-300 font-medium">
+                前景 {logo.colorFg}
+              </span>
+            )}
+            {logo.colorBg && (
+              <span className="px-1.5 py-0.5 rounded text-[10px] bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 font-medium">
+                背景 {logo.colorBg}
+              </span>
+            )}
             {hasMultipleLayouts && (
               <span className="hidden sm:inline px-1.5 py-0.5 rounded text-[10px] bg-gray-100 dark:bg-gray-800 text-gray-500 dark:text-gray-400 font-medium">
                 填充 + 独立区域

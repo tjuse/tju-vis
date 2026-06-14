@@ -16,11 +16,18 @@ const ROOT = path.resolve(__dirname, '..')
 
 // ─── Token → attribute maps ──────────────────────────────────────────────────
 
+// Each color token maps to { fg: 前景色, bg: 背景色 }
 const COLOR_MAP = {
-  white: '北洋蓝/白',
-  blue: '白/北洋蓝',
-  tp: '北洋蓝/透明',
-  black: '黑/白',
+  white: { fg: '北洋蓝', bg: '白' },
+  blue:  { fg: '白',     bg: '北洋蓝' },
+  tp:    { fg: '北洋蓝', bg: '透明' },
+  black: { fg: '黑',     bg: '白' },
+}
+
+// Legacy combined string for search/aria back-compat
+function colorLabel(token) {
+  const c = COLOR_MAP[token]
+  return c ? `${c.fg}/${c.bg}` : ''
 }
 
 const LANG_MAP = {
@@ -53,32 +60,38 @@ function parseName(base) {
   // ── Shields (辅助图形) ────────────────────────────────────────────────────
   if (rest.startsWith('shield_')) {
     category = CAT.shield
+    let colorToken
     if (rest === 'shield_border') {
-      subtype = '边框'; color = COLOR_MAP.white
+      subtype = '边框'; colorToken = 'white'
     } else if (rest === 'shield_border_tp') {
-      subtype = '边框'; color = COLOR_MAP.tp
+      subtype = '边框'; colorToken = 'tp'
     } else if (rest === 'shield_fill') {
-      subtype = '填充'; color = COLOR_MAP.white
+      subtype = '填充'; colorToken = 'white'
     } else if (rest === 'shield_fill_tp') {
-      subtype = '填充'; color = COLOR_MAP.tp
+      subtype = '填充'; colorToken = 'tp'
     } else {
-      subtype = ''; color = ''
+      subtype = ''; colorToken = null
     }
     lang = ''
     orientation = ''
+    color = colorToken ? colorLabel(colorToken) : ''
+    const colorFg = colorToken ? COLOR_MAP[colorToken].fg : ''
+    const colorBg = colorToken ? COLOR_MAP[colorToken].bg : ''
     const name = `北洋盾（${subtype}）`
-    return { category, color, lang, orientation, name, cardBg: colorToBg(color) }
+    return { category, color, colorFg, colorBg, lang, orientation, name, cardBg: colorToBg(color) }
   }
 
   // ── Badge / 图形标志（校徽） ──────────────────────────────────────────────
   if (rest.startsWith('badge_')) {
     category = CAT.badge
-    const sub = rest.slice('badge_'.length)    // e.g. "white", "blue", "tp"
-    color = COLOR_MAP[sub] ?? ''
+    const colorToken = rest.slice('badge_'.length)    // e.g. "white", "blue", "tp"
+    color = colorLabel(colorToken)
+    const colorFg = COLOR_MAP[colorToken]?.fg ?? ''
+    const colorBg = COLOR_MAP[colorToken]?.bg ?? ''
     lang = ''
     orientation = ''
     const name = '图形标志'
-    return { category, color, lang, orientation, name, cardBg: colorToBg(color) }
+    return { category, color, colorFg, colorBg, lang, orientation, name, cardBg: colorToBg(color) }
   }
 
   // ── Text / 字体标志（校标） ───────────────────────────────────────────────
@@ -94,9 +107,12 @@ function parseName(base) {
 
     // Extract color
     color = ''
-    for (const [token, label] of Object.entries(COLOR_MAP)) {
+    let colorFg = '', colorBg = ''
+    for (const [token] of Object.entries(COLOR_MAP)) {
       if (sub === token || sub.startsWith(token + '_')) {
-        color = label
+        color = colorLabel(token)
+        colorFg = COLOR_MAP[token].fg
+        colorBg = COLOR_MAP[token].bg
         sub = sub.slice(token.length).replace(/^_/, '')
         break
       }
@@ -113,7 +129,7 @@ function parseName(base) {
     if (quals.length) nameParts.push(`（${quals.join('，')}）`)
     const name = nameParts.join('')
 
-    return { category, color, lang, orientation, name, cardBg: colorToBg(color) }
+    return { category, color, colorFg, colorBg, lang, orientation, name, cardBg: colorToBg(color) }
   }
 
   // ── Standard combos 标准组合（校徽校标） ──────────────────────────────────
@@ -123,9 +139,12 @@ function parseName(base) {
 
   // Extract color first
   color = ''
-  for (const [token, label] of Object.entries(COLOR_MAP)) {
+  let colorFg = '', colorBg = ''
+  for (const [token] of Object.entries(COLOR_MAP)) {
     if (sub === token || sub.startsWith(token + '_')) {
-      color = label
+      color = colorLabel(token)
+      colorFg = COLOR_MAP[token].fg
+      colorBg = COLOR_MAP[token].bg
       sub = sub.slice(token.length).replace(/^_/, '')
       break
     }
@@ -150,7 +169,7 @@ function parseName(base) {
   if (quals.length) nameParts.push(`（${quals.join('，')}）`)
   const name = nameParts.join('')
 
-  return { category, color, lang, orientation, name, cardBg: colorToBg(color) }
+  return { category, color, colorFg, colorBg, lang, orientation, name, cardBg: colorToBg(color) }
 }
 
 function parseOrientation(sub) {
@@ -162,9 +181,10 @@ function parseOrientation(sub) {
 }
 
 function colorToBg(color) {
+  // color is now "${fg}/${bg}" e.g. "北洋蓝/白"
   switch (color) {
-    case '北洋蓝/白': return 'blue'     // logo is blue on white
-    case '白/北洋蓝': return 'white'    // logo is white on blue
+    case '北洋蓝/白': return 'blue'     // fg blue on white bg
+    case '白/北洋蓝': return 'white'    // fg white on blue bg
     case '北洋蓝/透明': return 'checker'
     case '黑/白': return 'light'
     default: return 'light'
@@ -210,6 +230,19 @@ function makeFormatPaths(layoutDir, base, ispadding) {
 
 // ─── Build logo entries ────────────────────────────────────────────────────────
 
+/** Parse the intrinsic aspect ratio (w/h) from an SVG file's viewBox attribute. */
+function svgAspect(svgPath) {
+  try {
+    const src = fs.readFileSync(path.join(ROOT, svgPath), 'utf8')
+    const m = src.match(/viewBox="[\d.-]+\s+[\d.-]+\s+([\d.-]+)\s+([\d.-]+)"/)
+    if (m) {
+      const w = parseFloat(m[1]), h = parseFloat(m[2])
+      if (h > 0) return w / h
+    }
+  } catch { /* file missing or unreadable */ }
+  return 1
+}
+
 const logos = allBases.map((base, idx) => {
   const hasFill = fillBases.includes(base)
   const hasPad = padBases.includes(base)
@@ -224,10 +257,15 @@ const logos = allBases.map((base, idx) => {
     fill?.svg ??
     (padding ? `images/padding/svg/${base}_padding.svg` : null)
 
+  // Intrinsic aspect ratio from the preview SVG (used for masonry height estimation)
+  const aspect = previewSvg ? svgAspect(previewSvg) : 1
+
   // Tags for filtering
   const tags = [
     meta.category,
     meta.color,
+    meta.colorFg,
+    meta.colorBg,
     meta.lang,
     meta.orientation,
     hasFill ? '填充' : null,
@@ -240,9 +278,12 @@ const logos = allBases.map((base, idx) => {
     name: meta.name,
     category: meta.category,
     color: meta.color,
+    colorFg: meta.colorFg ?? '',
+    colorBg: meta.colorBg ?? '',
     lang: meta.lang,
     orientation: meta.orientation,
     cardBg: meta.cardBg,
+    aspect,
     preview: previewSvg,
     layouts: {
       ...(fill ? { fill } : {}),
@@ -287,6 +328,8 @@ function unique(arr) { return [...new Set(arr.filter(Boolean))].sort() }
 
 const categories = unique(logos.map(l => l.category))
 const colors = unique(logos.map(l => l.color))
+const foregrounds = unique(logos.map(l => l.colorFg))
+const backgrounds = unique(logos.map(l => l.colorBg))
 const langs = unique(logos.map(l => l.lang))
 const orientations = unique(logos.map(l => l.orientation))
 
@@ -299,7 +342,7 @@ const manifest = {
     withFill: logos.filter(l => l.layouts.fill).length,
     withPadding: logos.filter(l => l.layouts.padding).length,
   },
-  filterOptions: { categories, colors, langs, orientations },
+  filterOptions: { categories, colors, foregrounds, backgrounds, langs, orientations },
   logos,
   references,
 }

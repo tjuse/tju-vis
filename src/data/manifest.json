@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-13T17:02:00.963Z",
+  "generated": "2026-06-14T02:38:48.217Z",
   "stats": {
     "total": 48,
     "withFill": 48,
@@ -17,6 +17,16 @@
       "北洋蓝/透明",
       "白/北洋蓝",
       "黑/白"
+    ],
+    "foregrounds": [
+      "北洋蓝",
+      "白",
+      "黑"
+    ],
+    "backgrounds": [
+      "北洋蓝",
+      "白",
+      "透明"
     ],
     "langs": [
       "中文",
@@ -36,9 +46,12 @@
       "name": "图形标志",
       "category": "图形标志",
       "color": "白/北洋蓝",
+      "colorFg": "白",
+      "colorBg": "北洋蓝",
       "lang": "",
       "orientation": "",
       "cardBg": "white",
+      "aspect": 1,
       "preview": "images/fill/svg/tju_badge_blue.svg",
       "layouts": {
         "fill": {
@@ -55,6 +68,8 @@
       "tags": [
         "图形标志",
         "白/北洋蓝",
+        "白",
+        "北洋蓝",
         "填充",
         "独立区域"
       ]
@@ -65,9 +80,12 @@
       "name": "图形标志",
       "category": "图形标志",
       "color": "北洋蓝/透明",
+      "colorFg": "北洋蓝",
+      "colorBg": "透明",
       "lang": "",
       "orientation": "",
       "cardBg": "checker",
+      "aspect": 1,
       "preview": "images/fill/svg/tju_badge_tp.svg",
       "layouts": {
         "fill": {
@@ -84,6 +102,8 @@
       "tags": [
         "图形标志",
         "北洋蓝/透明",
+        "北洋蓝",
+        "透明",
         "填充",
         "独立区域"
       ]
@@ -94,9 +114,12 @@
       "name": "图形标志",
       "category": "图形标志",
       "color": "北洋蓝/白",
+      "colorFg": "北洋蓝",
+      "colorBg": "白",
       "lang": "",
       "orientation": "",
       "cardBg": "blue",
+      "aspect": 1,
       "preview": "images/fill/svg/tju_badge_white.svg",
       "layouts": {
         "fill": {
@@ -113,6 +136,8 @@
       "tags": [
         "图形标志",
         "北洋蓝/白",
+        "北洋蓝",
+        "白",
         "填充",
         "独立区域"
       ]
@@ -123,9 +148,12 @@
       "name": "校徽校标",
       "category": "标准组合",
       "color": "白/北洋蓝",
+      "colorFg": "白",
+      "colorBg": "北洋蓝",
       "lang": "",
       "orientation": "横向",
       "cardBg": "white",
+      "aspect": 3.306640625,
       "preview": "images/fill/svg/tju_blue.svg",
       "layouts": {
         "fill": {
@@ -142,6 +170,8 @@
       "tags": [
         "标准组合",
         "白/北洋蓝",
+        "白",
+        "北洋蓝",
         "横向",
         "填充",
         "独立区域"
@@ -153,9 +183,12 @@
       "name": "校徽校标（中文）",
       "category": "标准组合",
       "color": "白/北洋蓝",
+      "colorFg": "白",
+      "colorBg": "北洋蓝",
       "lang": "中文",
       "orientation": "横向",
       "cardBg": "white",
+      "aspect": 4.120291616038882,
       "preview": "images/fill/svg/tju_blue_cn.svg",
       "layouts": {
         "fill": {
@@ -172,6 +205,8 @@
       "tags": [
         "标准组合",
         "白/北洋蓝",
+        "白",
+        "北洋蓝",
         "中文",
         "横向",
         "填充",
@@ -184,9 +219,12 @@
       "name": "校徽校标（中文，纵向）",
       "category": "标准组合",
       "color": "白/北洋蓝",
+      "colorFg": "白",
+      "colorBg": "北洋蓝",
       "lang": "中文",
       "orientation": "纵向",
       "cardBg": "white",
+      "aspect": 0.24406880189798338,
       "preview": "images/fill/svg/tju_blue_cn_vert.svg",
       "layouts": {
         "fill": {
@@ -203,6 +241,8 @@
       "tags": [
         "标准组合",
         "白/北洋蓝",
+        "白",
+        "北洋蓝",
         "中文",
         "纵向",
         "填充",
@@ -215,9 +255,12 @@
       "name": "校徽校标（英文）",
       "category": "标准组合",
       "color": "白/北洋蓝",
+      "colorFg": "白",
+      "colorBg": "北洋蓝",
       "lang": "英文",
       "orientation": "横向",
       "cardBg": "white",
+      "aspect": 4.114216281895504,
       "preview": "images/fill/svg/tju_blue_en.svg",
       "layouts": {
         "fill": {
@@ -234,6 +277,8 @@
       "tags": [
         "标准组合",
         "白/北洋蓝",
+        "白",
+        "北洋蓝",
         "英文",
         "横向",
         "填充",
@@ -246,9 +291,12 @@
       "name": "校徽校标（英文，纵向）",
       "category": "标准组合",
       "color": "白/北洋蓝",
+      "colorFg": "白",
+      "colorBg": "北洋蓝",
       "lang": "英文",
       "orientation": "纵向",
       "cardBg": "white",
+      "aspect": 0.24515936848376527,
       "preview": "images/fill/svg/tju_blue_en_vert.svg",
       "layouts": {
         "fill": {
@@ -265,6 +313,8 @@
       "tags": [
         "标准组合",
         "白/北洋蓝",
+        "白",
+        "北洋蓝",
         "英文",
         "纵向",
         "填充",
@@ -277,9 +327,12 @@
       "name": "校徽校标（横文纵排）",
       "category": "标准组合",
       "color": "白/北洋蓝",
+      "colorFg": "白",
+      "colorBg": "北洋蓝",
       "lang": "",
       "orientation": "横文纵排",
       "cardBg": "white",
+      "aspect": 1.0012269938650307,
       "preview": "images/fill/svg/tju_blue_vert_ht.svg",
       "layouts": {
         "fill": {
@@ -296,6 +349,8 @@
       "tags": [
         "标准组合",
         "白/北洋蓝",
+        "白",
+        "北洋蓝",
         "横文纵排",
         "填充",
         "独立区域"
@@ -307,9 +362,12 @@
       "name": "校徽校标（纵文纵排）",
       "category": "标准组合",
       "color": "白/北洋蓝",
+      "colorFg": "白",
+      "colorBg": "北洋蓝",
       "lang": "",
       "orientation": "纵文纵排",
       "cardBg": "white",
+      "aspect": 0.2624555160142349,
       "preview": "images/fill/svg/tju_blue_vert_vt.svg",
       "layouts": {
         "fill": {
@@ -326,6 +384,8 @@
       "tags": [
         "标准组合",
         "白/北洋蓝",
+        "白",
+        "北洋蓝",
         "纵文纵排",
         "填充",
         "独立区域"
@@ -337,9 +397,12 @@
       "name": "北洋盾（边框）",
       "category": "辅助图形",
       "color": "北洋蓝/白",
+      "colorFg": "北洋蓝",
+      "colorBg": "白",
       "lang": "",
       "orientation": "",
       "cardBg": "blue",
+      "aspect": 0.7746478873239436,
       "preview": "images/fill/svg/tju_shield_border.svg",
       "layouts": {
         "fill": {
@@ -351,6 +414,8 @@
       "tags": [
         "辅助图形",
         "北洋蓝/白",
+        "北洋蓝",
+        "白",
         "填充"
       ]
     },
@@ -360,9 +425,12 @@
       "name": "北洋盾（边框）",
       "category": "辅助图形",
       "color": "北洋蓝/透明",
+      "colorFg": "北洋蓝",
+      "colorBg": "透明",
       "lang": "",
       "orientation": "",
       "cardBg": "checker",
+      "aspect": 0.7746478873239436,
       "preview": "images/fill/svg/tju_shield_border_tp.svg",
       "layouts": {
         "fill": {
@@ -374,6 +442,8 @@
       "tags": [
         "辅助图形",
         "北洋蓝/透明",
+        "北洋蓝",
+        "透明",
         "填充"
       ]
     },
@@ -383,9 +453,12 @@
       "name": "北洋盾（填充）",
       "category": "辅助图形",
       "color": "北洋蓝/白",
+      "colorFg": "北洋蓝",
+      "colorBg": "白",
       "lang": "",
       "orientation": "",
       "cardBg": "blue",
+      "aspect": 0.7746478873239436,
       "preview": "images/fill/svg/tju_shield_fill.svg",
       "layouts": {
         "fill": {
@@ -397,6 +470,8 @@
       "tags": [
         "辅助图形",
         "北洋蓝/白",
+        "北洋蓝",
+        "白",
         "填充"
       ]
     },
@@ -406,9 +481,12 @@
       "name": "北洋盾（填充）",
       "category": "辅助图形",
       "color": "北洋蓝/透明",
+      "colorFg": "北洋蓝",
+      "colorBg": "透明",
       "lang": "",
       "orientation": "",
       "cardBg": "checker",
+      "aspect": 0.7746478873239436,
       "preview": "images/fill/svg/tju_shield_fill_tp.svg",
       "layouts": {
         "fill": {
@@ -420,6 +498,8 @@
       "tags": [
         "辅助图形",
         "北洋蓝/透明",
+        "北洋蓝",
+        "透明",
         "填充"
       ]
     },
@@ -429,9 +509,12 @@
       "name": "校标",
       "category": "字体标志",
       "color": "黑/白",
+      "colorFg": "黑",
+      "colorBg": "白",
       "lang": "",
       "orientation": "横向",
       "cardBg": "light",
+      "aspect": 2.330078125,
       "preview": "images/fill/svg/tju_text_black.svg",
       "layouts": {
         "fill": {
@@ -443,6 +526,8 @@
       "tags": [
         "字体标志",
         "黑/白",
+        "黑",
+        "白",
         "横向",
         "填充"
       ]
@@ -453,9 +538,12 @@
       "name": "校标",
       "category": "字体标志",
       "color": "白/北洋蓝",
+      "colorFg": "白",
+      "colorBg": "北洋蓝",
       "lang": "",
       "orientation": "横向",
       "cardBg": "white",
+      "aspect": 2.330078125,
       "preview": "images/fill/svg/tju_text_blue.svg",
       "layouts": {
         "fill": {
@@ -467,6 +555,8 @@
       "tags": [
         "字体标志",
         "白/北洋蓝",
+        "白",
+        "北洋蓝",
         "横向",
         "填充"
       ]
@@ -477,9 +567,12 @@
       "name": "校标（中文）",
       "category": "字体标志",
       "color": "黑/白",
+      "colorFg": "黑",
+      "colorBg": "白",
       "lang": "中文",
       "orientation": "横向",
       "cardBg": "light",
+      "aspect": 3.556716417910448,
       "preview": "images/fill/svg/tju_text_cn_black.svg",
       "layouts": {
         "fill": {
@@ -496,6 +589,8 @@
       "tags": [
         "字体标志",
         "黑/白",
+        "黑",
+        "白",
         "中文",
         "横向",
         "填充",
@@ -508,9 +603,12 @@
       "name": "校标（中文，纵向）",
       "category": "字体标志",
       "color": "黑/白",
+      "colorFg": "黑",
+      "colorBg": "白",
       "lang": "中文",
       "orientation": "纵向",
       "cardBg": "light",
+      "aspect": 0.19085631349782292,
       "preview": "images/fill/svg/tju_text_cn_black_vert.svg",
       "layouts": {
         "fill": {
@@ -527,6 +625,8 @@
       "tags": [
         "字体标志",
         "黑/白",
+        "黑",
+        "白",
         "中文",
         "纵向",
         "填充",
@@ -539,9 +639,12 @@
       "name": "校标（中文）",
       "category": "字体标志",
       "color": "白/北洋蓝",
+      "colorFg": "白",
+      "colorBg": "北洋蓝",
       "lang": "中文",
       "orientation": "横向",
       "cardBg": "white",
+      "aspect": 3.556716417910448,
       "preview": "images/fill/svg/tju_text_cn_blue.svg",
       "layouts": {
         "fill": {
@@ -558,6 +661,8 @@
       "tags": [
         "字体标志",
         "白/北洋蓝",
+        "白",
+        "北洋蓝",
         "中文",
         "横向",
         "填充",
@@ -570,9 +675,12 @@
       "name": "校标（中文，纵向）",
       "category": "字体标志",
       "color": "白/北洋蓝",
+      "colorFg": "白",
+      "colorBg": "北洋蓝",
       "lang": "中文",
       "orientation": "纵向",
       "cardBg": "white",
+      "aspect": 0.19085631349782292,
       "preview": "images/fill/svg/tju_text_cn_blue_vert.svg",
       "layouts": {
         "fill": {
@@ -589,6 +697,8 @@
       "tags": [
         "字体标志",
         "白/北洋蓝",
+        "白",
+        "北洋蓝",
         "中文",
         "纵向",
         "填充",
@@ -601,9 +711,12 @@
       "name": "校标（中文）",
       "category": "字体标志",
       "color": "北洋蓝/透明",
+      "colorFg": "北洋蓝",
+      "colorBg": "透明",
       "lang": "中文",
       "orientation": "横向",
       "cardBg": "checker",
+      "aspect": 3.556716417910448,
       "preview": "images/fill/svg/tju_text_cn_tp.svg",
       "layouts": {
         "fill": {
@@ -620,6 +733,8 @@
       "tags": [
         "字体标志",
         "北洋蓝/透明",
+        "北洋蓝",
+        "透明",
         "中文",
         "横向",
         "填充",
@@ -632,9 +747,12 @@
       "name": "校标（中文，纵向）",
       "category": "字体标志",
       "color": "北洋蓝/透明",
+      "colorFg": "北洋蓝",
+      "colorBg": "透明",
       "lang": "中文",
       "orientation": "纵向",
       "cardBg": "checker",
+      "aspect": 0.19085631349782292,
       "preview": "images/fill/svg/tju_text_cn_tp_vert.svg",
       "layouts": {
         "fill": {
@@ -651,6 +769,8 @@
       "tags": [
         "字体标志",
         "北洋蓝/透明",
+        "北洋蓝",
+        "透明",
         "中文",
         "纵向",
         "填充",
@@ -663,9 +783,12 @@
       "name": "校标（中文）",
       "category": "字体标志",
       "color": "北洋蓝/白",
+      "colorFg": "北洋蓝",
+      "colorBg": "白",
       "lang": "中文",
       "orientation": "横向",
       "cardBg": "blue",
+      "aspect": 3.556716417910448,
       "preview": "images/fill/svg/tju_text_cn_white.svg",
       "layouts": {
         "fill": {
@@ -682,6 +805,8 @@
       "tags": [
         "字体标志",
         "北洋蓝/白",
+        "北洋蓝",
+        "白",
         "中文",
         "横向",
         "填充",
@@ -694,9 +819,12 @@
       "name": "校标（中文，纵向）",
       "category": "字体标志",
       "color": "北洋蓝/白",
+      "colorFg": "北洋蓝",
+      "colorBg": "白",
       "lang": "中文",
       "orientation": "纵向",
       "cardBg": "blue",
+      "aspect": 0.19085631349782292,
       "preview": "images/fill/svg/tju_text_cn_white_vert.svg",
       "layouts": {
         "fill": {
@@ -713,6 +841,8 @@
       "tags": [
         "字体标志",
         "北洋蓝/白",
+        "北洋蓝",
+        "白",
         "中文",
         "纵向",
         "填充",
@@ -725,9 +855,12 @@
       "name": "校标（英文）",
       "category": "字体标志",
       "color": "黑/白",
+      "colorFg": "黑",
+      "colorBg": "白",
       "lang": "英文",
       "orientation": "横向",
       "cardBg": "light",
+      "aspect": 8.837037037037037,
       "preview": "images/fill/svg/tju_text_en_black.svg",
       "layouts": {
         "fill": {
@@ -744,6 +877,8 @@
       "tags": [
         "字体标志",
         "黑/白",
+        "黑",
+        "白",
         "英文",
         "横向",
         "填充",
@@ -756,9 +891,12 @@
       "name": "校标（英文，纵向）",
       "category": "字体标志",
       "color": "黑/白",
+      "colorFg": "黑",
+      "colorBg": "白",
       "lang": "英文",
       "orientation": "纵向",
       "cardBg": "light",
+      "aspect": 0.11316010058675607,
       "preview": "images/fill/svg/tju_text_en_black_vert.svg",
       "layouts": {
         "fill": {
@@ -775,6 +913,8 @@
       "tags": [
         "字体标志",
         "黑/白",
+        "黑",
+        "白",
         "英文",
         "纵向",
         "填充",
@@ -787,9 +927,12 @@
       "name": "校标（英文）",
       "category": "字体标志",
       "color": "白/北洋蓝",
+      "colorFg": "白",
+      "colorBg": "北洋蓝",
       "lang": "英文",
       "orientation": "横向",
       "cardBg": "white",
+      "aspect": 8.837037037037037,
       "preview": "images/fill/svg/tju_text_en_blue.svg",
       "layouts": {
         "fill": {
@@ -806,6 +949,8 @@
       "tags": [
         "字体标志",
         "白/北洋蓝",
+        "白",
+        "北洋蓝",
         "英文",
         "横向",
         "填充",
@@ -818,9 +963,12 @@
       "name": "校标（英文，纵向）",
       "category": "字体标志",
       "color": "白/北洋蓝",
+      "colorFg": "白",
+      "colorBg": "北洋蓝",
       "lang": "英文",
       "orientation": "纵向",
       "cardBg": "white",
+      "aspect": 0.11316010058675607,
       "preview": "images/fill/svg/tju_text_en_blue_vert.svg",
       "layouts": {
         "fill": {
@@ -837,6 +985,8 @@
       "tags": [
         "字体标志",
         "白/北洋蓝",
+        "白",
+        "北洋蓝",
         "英文",
         "纵向",
         "填充",
@@ -849,9 +999,12 @@
       "name": "校标（英文）",
       "category": "字体标志",
       "color": "北洋蓝/透明",
+      "colorFg": "北洋蓝",
+      "colorBg": "透明",
       "lang": "英文",
       "orientation": "横向",
       "cardBg": "checker",
+      "aspect": 8.837037037037037,
       "preview": "images/fill/svg/tju_text_en_tp.svg",
       "layouts": {
         "fill": {
@@ -868,6 +1021,8 @@
       "tags": [
         "字体标志",
         "北洋蓝/透明",
+        "北洋蓝",
+        "透明",
         "英文",
         "横向",
         "填充",
@@ -880,9 +1035,12 @@
       "name": "校标（英文，纵向）",
       "category": "字体标志",
       "color": "北洋蓝/透明",
+      "colorFg": "北洋蓝",
+      "colorBg": "透明",
       "lang": "英文",
       "orientation": "纵向",
       "cardBg": "checker",
+      "aspect": 0.11316010058675607,
       "preview": "images/fill/svg/tju_text_en_tp_vert.svg",
       "layouts": {
         "fill": {
@@ -899,6 +1057,8 @@
       "tags": [
         "字体标志",
         "北洋蓝/透明",
+        "北洋蓝",
+        "透明",
         "英文",
         "纵向",
         "填充",
@@ -911,9 +1071,12 @@
       "name": "校标（英文）",
       "category": "字体标志",
       "color": "北洋蓝/白",
+      "colorFg": "北洋蓝",
+      "colorBg": "白",
       "lang": "英文",
       "orientation": "横向",
       "cardBg": "blue",
+      "aspect": 8.837037037037037,
       "preview": "images/fill/svg/tju_text_en_white.svg",
       "layouts": {
         "fill": {
@@ -930,6 +1093,8 @@
       "tags": [
         "字体标志",
         "北洋蓝/白",
+        "北洋蓝",
+        "白",
         "英文",
         "横向",
         "填充",
@@ -942,9 +1107,12 @@
       "name": "校标（英文，纵向）",
       "category": "字体标志",
       "color": "北洋蓝/白",
+      "colorFg": "北洋蓝",
+      "colorBg": "白",
       "lang": "英文",
       "orientation": "纵向",
       "cardBg": "blue",
+      "aspect": 0.11316010058675607,
       "preview": "images/fill/svg/tju_text_en_white_vert.svg",
       "layouts": {
         "fill": {
@@ -961,6 +1129,8 @@
       "tags": [
         "字体标志",
         "北洋蓝/白",
+        "北洋蓝",
+        "白",
         "英文",
         "纵向",
         "填充",
@@ -973,9 +1143,12 @@
       "name": "校标",
       "category": "字体标志",
       "color": "北洋蓝/透明",
+      "colorFg": "北洋蓝",
+      "colorBg": "透明",
       "lang": "",
       "orientation": "横向",
       "cardBg": "checker",
+      "aspect": 2.330078125,
       "preview": "images/fill/svg/tju_text_tp.svg",
       "layouts": {
         "fill": {
@@ -987,6 +1160,8 @@
       "tags": [
         "字体标志",
         "北洋蓝/透明",
+        "北洋蓝",
+        "透明",
         "横向",
         "填充"
       ]
@@ -997,9 +1172,12 @@
       "name": "校标",
       "category": "字体标志",
       "color": "北洋蓝/白",
+      "colorFg": "北洋蓝",
+      "colorBg": "白",
       "lang": "",
       "orientation": "横向",
       "cardBg": "blue",
+      "aspect": 2.330078125,
       "preview": "images/fill/svg/tju_text_white.svg",
       "layouts": {
         "fill": {
@@ -1011,6 +1189,8 @@
       "tags": [
         "字体标志",
         "北洋蓝/白",
+        "北洋蓝",
+        "白",
         "横向",
         "填充"
       ]
@@ -1021,9 +1201,12 @@
       "name": "校徽校标",
       "category": "标准组合",
       "color": "北洋蓝/透明",
+      "colorFg": "北洋蓝",
+      "colorBg": "透明",
       "lang": "",
       "orientation": "横向",
       "cardBg": "checker",
+      "aspect": 3.306640625,
       "preview": "images/fill/svg/tju_tp.svg",
       "layouts": {
         "fill": {
@@ -1040,6 +1223,8 @@
       "tags": [
         "标准组合",
         "北洋蓝/透明",
+        "北洋蓝",
+        "透明",
         "横向",
         "填充",
         "独立区域"
@@ -1051,9 +1236,12 @@
       "name": "校徽校标（中文）",
       "category": "标准组合",
       "color": "北洋蓝/透明",
+      "colorFg": "北洋蓝",
+      "colorBg": "透明",
       "lang": "中文",
       "orientation": "横向",
       "cardBg": "checker",
+      "aspect": 4.120291616038882,
       "preview": "images/fill/svg/tju_tp_cn.svg",
       "layouts": {
         "fill": {
@@ -1070,6 +1258,8 @@
       "tags": [
         "标准组合",
         "北洋蓝/透明",
+        "北洋蓝",
+        "透明",
         "中文",
         "横向",
         "填充",
@@ -1082,9 +1272,12 @@
       "name": "校徽校标（中文，纵向）",
       "category": "标准组合",
       "color": "北洋蓝/透明",
+      "colorFg": "北洋蓝",
+      "colorBg": "透明",
       "lang": "中文",
       "orientation": "纵向",
       "cardBg": "checker",
+      "aspect": 0.24406880189798338,
       "preview": "images/fill/svg/tju_tp_cn_vert.svg",
       "layouts": {
         "fill": {
@@ -1101,6 +1294,8 @@
       "tags": [
         "标准组合",
         "北洋蓝/透明",
+        "北洋蓝",
+        "透明",
         "中文",
         "纵向",
         "填充",
@@ -1113,9 +1308,12 @@
       "name": "校徽校标（英文）",
       "category": "标准组合",
       "color": "北洋蓝/透明",
+      "colorFg": "北洋蓝",
+      "colorBg": "透明",
       "lang": "英文",
       "orientation": "横向",
       "cardBg": "checker",
+      "aspect": 4.114216281895504,
       "preview": "images/fill/svg/tju_tp_en.svg",
       "layouts": {
         "fill": {
@@ -1132,6 +1330,8 @@
       "tags": [
         "标准组合",
         "北洋蓝/透明",
+        "北洋蓝",
+        "透明",
         "英文",
         "横向",
         "填充",
@@ -1144,9 +1344,12 @@
       "name": "校徽校标（英文，纵向）",
       "category": "标准组合",
       "color": "北洋蓝/透明",
+      "colorFg": "北洋蓝",
+      "colorBg": "透明",
       "lang": "英文",
       "orientation": "纵向",
       "cardBg": "checker",
+      "aspect": 0.24515936848376527,
       "preview": "images/fill/svg/tju_tp_en_vert.svg",
       "layouts": {
         "fill": {
@@ -1163,6 +1366,8 @@
       "tags": [
         "标准组合",
         "北洋蓝/透明",
+        "北洋蓝",
+        "透明",
         "英文",
         "纵向",
         "填充",
@@ -1175,9 +1380,12 @@
       "name": "校徽校标（横文纵排）",
       "category": "标准组合",
       "color": "北洋蓝/透明",
+      "colorFg": "北洋蓝",
+      "colorBg": "透明",
       "lang": "",
       "orientation": "横文纵排",
       "cardBg": "checker",
+      "aspect": 1.0012269938650307,
       "preview": "images/fill/svg/tju_tp_vert_ht.svg",
       "layouts": {
         "fill": {
@@ -1194,6 +1402,8 @@
       "tags": [
         "标准组合",
         "北洋蓝/透明",
+        "北洋蓝",
+        "透明",
         "横文纵排",
         "填充",
         "独立区域"
@@ -1205,9 +1415,12 @@
       "name": "校徽校标（纵文纵排）",
       "category": "标准组合",
       "color": "北洋蓝/透明",
+      "colorFg": "北洋蓝",
+      "colorBg": "透明",
       "lang": "",
       "orientation": "纵文纵排",
       "cardBg": "checker",
+      "aspect": 0.2624555160142349,
       "preview": "images/fill/svg/tju_tp_vert_vt.svg",
       "layouts": {
         "fill": {
@@ -1224,6 +1437,8 @@
       "tags": [
         "标准组合",
         "北洋蓝/透明",
+        "北洋蓝",
+        "透明",
         "纵文纵排",
         "填充",
         "独立区域"
@@ -1235,9 +1450,12 @@
       "name": "校徽校标",
       "category": "标准组合",
       "color": "北洋蓝/白",
+      "colorFg": "北洋蓝",
+      "colorBg": "白",
       "lang": "",
       "orientation": "横向",
       "cardBg": "blue",
+      "aspect": 3.306640625,
       "preview": "images/fill/svg/tju_white.svg",
       "layouts": {
         "fill": {
@@ -1254,6 +1472,8 @@
       "tags": [
         "标准组合",
         "北洋蓝/白",
+        "北洋蓝",
+        "白",
         "横向",
         "填充",
         "独立区域"
@@ -1265,9 +1485,12 @@
       "name": "校徽校标（中文）",
       "category": "标准组合",
       "color": "北洋蓝/白",
+      "colorFg": "北洋蓝",
+      "colorBg": "白",
       "lang": "中文",
       "orientation": "横向",
       "cardBg": "blue",
+      "aspect": 4.120291616038882,
       "preview": "images/fill/svg/tju_white_cn.svg",
       "layouts": {
         "fill": {
@@ -1284,6 +1507,8 @@
       "tags": [
         "标准组合",
         "北洋蓝/白",
+        "北洋蓝",
+        "白",
         "中文",
         "横向",
         "填充",
@@ -1296,9 +1521,12 @@
       "name": "校徽校标（中文，纵向）",
       "category": "标准组合",
       "color": "北洋蓝/白",
+      "colorFg": "北洋蓝",
+      "colorBg": "白",
       "lang": "中文",
       "orientation": "纵向",
       "cardBg": "blue",
+      "aspect": 0.24406880189798338,
       "preview": "images/fill/svg/tju_white_cn_vert.svg",
       "layouts": {
         "fill": {
@@ -1315,6 +1543,8 @@
       "tags": [
         "标准组合",
         "北洋蓝/白",
+        "北洋蓝",
+        "白",
         "中文",
         "纵向",
         "填充",
@@ -1327,9 +1557,12 @@
       "name": "校徽校标（英文）",
       "category": "标准组合",
       "color": "北洋蓝/白",
+      "colorFg": "北洋蓝",
+      "colorBg": "白",
       "lang": "英文",
       "orientation": "横向",
       "cardBg": "blue",
+      "aspect": 4.114216281895504,
       "preview": "images/fill/svg/tju_white_en.svg",
       "layouts": {
         "fill": {
@@ -1346,6 +1579,8 @@
       "tags": [
         "标准组合",
         "北洋蓝/白",
+        "北洋蓝",
+        "白",
         "英文",
         "横向",
         "填充",
@@ -1358,9 +1593,12 @@
       "name": "校徽校标（英文，纵向）",
       "category": "标准组合",
       "color": "北洋蓝/白",
+      "colorFg": "北洋蓝",
+      "colorBg": "白",
       "lang": "英文",
       "orientation": "纵向",
       "cardBg": "blue",
+      "aspect": 0.24515936848376527,
       "preview": "images/fill/svg/tju_white_en_vert.svg",
       "layouts": {
         "fill": {
@@ -1377,6 +1615,8 @@
       "tags": [
         "标准组合",
         "北洋蓝/白",
+        "北洋蓝",
+        "白",
         "英文",
         "纵向",
         "填充",
@@ -1389,9 +1629,12 @@
       "name": "校徽校标（横文纵排）",
       "category": "标准组合",
       "color": "北洋蓝/白",
+      "colorFg": "北洋蓝",
+      "colorBg": "白",
       "lang": "",
       "orientation": "横文纵排",
       "cardBg": "blue",
+      "aspect": 1.0012269938650307,
       "preview": "images/fill/svg/tju_white_vert_ht.svg",
       "layouts": {
         "fill": {
@@ -1408,6 +1651,8 @@
       "tags": [
         "标准组合",
         "北洋蓝/白",
+        "北洋蓝",
+        "白",
         "横文纵排",
         "填充",
         "独立区域"
@@ -1419,9 +1664,12 @@
       "name": "校徽校标（纵文纵排）",
       "category": "标准组合",
       "color": "北洋蓝/白",
+      "colorFg": "北洋蓝",
+      "colorBg": "白",
       "lang": "",
       "orientation": "纵文纵排",
       "cardBg": "blue",
+      "aspect": 0.2624555160142349,
       "preview": "images/fill/svg/tju_white_vert_vt.svg",
       "layouts": {
         "fill": {
@@ -1438,6 +1686,8 @@
       "tags": [
         "标准组合",
         "北洋蓝/白",
+        "北洋蓝",
+        "白",
         "纵文纵排",
         "填充",
         "独立区域"

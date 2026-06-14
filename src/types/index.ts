@@ -9,10 +9,17 @@ export interface LogoEntry {
   base: string
   name: string
   category: string
+  /** Combined "fg/bg" string kept for search/aria back-compat */
   color: string
+  /** Foreground color e.g. "北洋蓝" | "白" | "黑" */
+  colorFg: string
+  /** Background color e.g. "白" | "北洋蓝" | "透明" */
+  colorBg: string
   lang: string
   orientation: string
   cardBg: 'blue' | 'white' | 'checker' | 'light'
+  /** Intrinsic SVG width / height ratio; used for masonry height estimation */
+  aspect: number
   preview: string | null
   layouts: {
     fill?: FormatSet
@@ -38,6 +45,8 @@ export interface Manifest {
   filterOptions: {
     categories: string[]
     colors: string[]
+    foregrounds: string[]
+    backgrounds: string[]
     langs: string[]
     orientations: string[]
   }
@@ -46,8 +55,9 @@ export interface Manifest {
 }
 
 export interface Filters {
-  category: string   // '' means all
-  color: string
-  layout: string     // '' | '填充' | '独立区域'
+  category: string    // '' means all
+  foreground: string  // '' means all
+  background: string  // '' means all
+  layout: string      // '' | '填充' | '独立区域'
   search: string
 }

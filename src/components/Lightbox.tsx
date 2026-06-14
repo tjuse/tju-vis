@@ -137,9 +137,16 @@ export function Lightbox({ logo, onClose, onPrev, onNext }: Props) {
                 {logo.name}
               </h2>
               <div className="flex flex-wrap gap-1.5 mt-1">
-                <span className="px-2 py-0.5 rounded-md text-xs bg-peiyang-50 dark:bg-peiyang-900/30 text-peiyang-700 dark:text-peiyang-300 font-medium">
-                  {logo.color}
-                </span>
+                {logo.colorFg && (
+                  <span className="px-2 py-0.5 rounded-md text-xs bg-peiyang-50 dark:bg-peiyang-900/30 text-peiyang-700 dark:text-peiyang-300 font-medium">
+                    前景 {logo.colorFg}
+                  </span>
+                )}
+                {logo.colorBg && (
+                  <span className="px-2 py-0.5 rounded-md text-xs bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 font-medium">
+                    背景 {logo.colorBg}
+                  </span>
+                )}
                 {logo.category && (
                   <span className="px-2 py-0.5 rounded-md text-xs bg-gray-100 dark:bg-gray-800 text-gray-500 dark:text-gray-400 font-medium">
                     {logo.category}
@@ -161,7 +168,7 @@ export function Lightbox({ logo, onClose, onPrev, onNext }: Props) {
           <div className="p-5 flex flex-col gap-4">
             {/* Backdrop toggle */}
             <div className="flex items-center gap-2">
-              <span className="text-xs text-gray-400">背景</span>
+              <span className="text-xs text-gray-400">预览底色</span>
               <div className="flex rounded-lg border border-gray-200 dark:border-gray-700 overflow-hidden">
                 {BACKDROP_OPTIONS.map(opt => (
                   <button
@@ -190,7 +197,7 @@ export function Lightbox({ logo, onClose, onPrev, onNext }: Props) {
               {logo.preview && (
                 <img
                   src={assetUrl(logo.preview)}
-                  alt={`${logo.name} ${logo.color}`}
+                  alt={`${logo.name} 前景${logo.colorFg} 背景${logo.colorBg}`}
                   className="max-w-full max-h-80 object-contain"
                 />
               )}
