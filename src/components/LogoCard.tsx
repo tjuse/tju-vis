@@ -71,11 +71,11 @@ export function LogoCard({ logo, onOpen }: Props) {
       aria-label={`预览 ${logo.name} ${colorLabel}`}
       onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onOpen(logo) } }}
     >
-      {/* Preview area */}
+      {/* Preview area — no fixed aspect ratio; card height follows logo's natural shape */}
       <div className="relative">
         <div
           className={cn(
-            'aspect-[4/3] flex items-center justify-center p-4 sm:p-6',
+            'flex items-center justify-center p-4 sm:p-5',
             getCardBgClass(logo.cardBg)
           )}
         >
@@ -83,7 +83,7 @@ export function LogoCard({ logo, onOpen }: Props) {
             <img
               src={assetUrl(logo.preview)}
               alt={`${logo.name} ${colorLabel}`}
-              className="max-w-full max-h-full object-contain"
+              className="w-full h-auto max-h-[280px] object-contain"
               loading="lazy"
               decoding="async"
             />

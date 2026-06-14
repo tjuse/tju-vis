@@ -1,6 +1,7 @@
-import { motion, AnimatePresence } from 'framer-motion'
+import { motion } from 'framer-motion'
 import { PackageSearch } from 'lucide-react'
 import { LogoCard } from './LogoCard'
+import { useColumnCount } from '@/lib/useColumnCount'
 import type { LogoEntry } from '@/types'
 
 interface Props {
@@ -9,6 +10,8 @@ interface Props {
 }
 
 export function LogoGrid({ logos, onSelect }: Props) {
+  const colCount = useColumnCount()
+
   if (logos.length === 0) {
     return (
       <motion.div
@@ -23,24 +26,29 @@ export function LogoGrid({ logos, onSelect }: Props) {
     )
   }
 
+  // Round-robin distribute into N columns (preserves left-to-right order)
+  const columns: LogoEntry[][] = Array.from({ length: colCount }, () => [])
+  logos.forEach((logo, i) => columns[i % colCount].push(logo))
+
   return (
-    <motion.div
-      layout
-      className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4 py-6"
-    >
-      <AnimatePresence mode="popLayout">
-        {logos.map((logo, i) => (
-          <motion.div
-            key={logo.id}
-            layout
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1, transition: { delay: Math.min(i * 0.02, 0.3) } }}
-            exit={{ opacity: 0 }}
-          >
-            <LogoCard logo={logo} onOpen={onSelect} />
-          </motion.div>
-        ))}
-      </AnimatePresence>
-    </motion.div>
+    <div className="flex items-start gap-3 sm:gap-4 py-6">
+      {columns.map((col, colIdx) => (
+        <div key={colIdx} className="flex-1 flex flex-col gap-3 sm:gap-4 min-w-0">
+          {col.map((logo, rowIdx) => (
+            <motion.div
+              key={logo.id}
+              initial={{ opacity: 0, y: 12 }}
+              animate={{
+                opacity: 1,
+                y: 0,
+                transition: { delay: Math.min((colIdx + rowIdx * colCount) * 0.025, 0.35) },
+              }}
+            >
+              <LogoCard logo={logo} onOpen={onSelect} />
+            </motion.div>
+          ))}
+        </div>
+      ))}
+    </div>
   )
 }
